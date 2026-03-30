@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sergio Barroso — Ingeniero en Electrónica Industrial y Automática</title>
+  <meta name="description" content="Portfolio de Sergio Barroso. Ingeniero en Electrónica Industrial y Automática con formación en IA Aplicada. Proyectos de hardware embebido, Python, Machine Learning y automatización.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg1: #1f2937;
+      --bg2: #374151;
+      --bg3: #2d3748;
+      --accent: #3767f6;
+      --accent-dim: rgba(55, 103, 246, 0.14);
+      --accent-border: rgba(55, 103, 246, 0.28);
+      --text: #f9fafb;
+      --muted: #9ca3af;
+      --border: #4b5563;
+      --green: #34d399;
+      --green-dim: rgba(16, 185, 129, 0.12);
+      --green-border: rgba(52, 211, 153, 0.25);
+      --amber: #f59e0b;
+      --amber-dim: rgba(245, 158, 11, 0.10);
+      --amber-border: rgba(245, 158, 11, 0.25);
+      --font-title: 'Poppins', sans-serif;
+      --font-body: 'Roboto', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg1);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 15px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(31, 41, 55, 0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 40px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      font-family: var(--font-title);
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      text-decoration: none;
+      letter-spacing: 0.4px;
+    }
+    .nav-logo span { color: var(--accent); }
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 13px;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--text); }
+
+    /* ── LAYOUT ── */
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+    .divider {
+      height: 1px;
+      background: var(--border);
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    section { padding: 72px 40px; max-width: 860px; margin: 0 auto; }
+
+    /* ── HERO ── */
+    #hero { padding: 96px 40px 80px; }
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 5px 13px;
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+    }
+    .hero-tag-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+    h1 {
+      font-family: var(--font-title);
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 22px;
+      color: var(--text);
+    }
+    h1 .hl { color: var(--accent); }
+    .hero-sub {
+      font-size: 16px;
+      color: var(--muted);
+      max-width: 580px;
+      margin-bottom: 40px;
+      line-height: 1.75;
+    }
+    .ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 12px 26px;
+      border-radius: 4px;
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: opacity 0.2s;
+    }
+    .btn-primary:hover { opacity: 0.88; }
+    .btn-secondary {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 12px 26px;
+      border-radius: 4px;
+      font-family: var(--font-body);
+      font-size: 13px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: border-color 0.2s;
+    }
+    .btn-secondary:hover { border-color: var(--accent); }
+
+    /* ── SECTION LABELS ── */
+    .sec-label {
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+    h2 {
+      font-family: var(--font-title);
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 24px;
+    }
+
+    /* ── ABOUT ── */
+    .about-text {
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.88;
+      max-width: 660px;
+    }
+    .about-text strong { color: var(--text); font-weight: 500; }
+
+    /* ── STACK ── */
+    .stack-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    @media (max-width: 600px) {
+      .stack-grid { grid-template-columns: 1fr; }
+    }
+    .stack-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 20px;
+    }
+    .stack-card-title {
+      font-size: 10px;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 14px;
+      font-weight: 500;
+    }
+    .stack-item {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      font-size: 13px;
+      color: var(--muted);
+      padding: 3px 0;
+    }
+    .stack-item.main { color: var(--text); }
+    .stack-dot {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--border);
+      flex-shrink: 0;
+    }
+
+    /* ── PROJECTS ── */
+    .project-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 6px;
+      padding: 26px 28px;
+      margin-bottom: 18px;
+    }
+    .project-card.wip { border-left-color: var(--amber); }
+
+    .card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+    .card-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+
+    .tag, .tag-pub, .tag-wip {
+      border-radius: 3px;
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      white-space: nowrap;
+      font-family: var(--font-body);
+    }
+    .tag {
+      background: var(--accent-dim);
+      color: var(--accent);
+      border: 1px solid var(--accent-border);
+    }
+    .tag-pub {
+      background: var(--green-dim);
+      color: var(--green);
+      border: 1px solid var(--green-border);
+    }
+    .tag-wip {
+      background: var(--amber-dim);
+      color: var(--amber);
+      border: 1px solid var(--amber-border);
+    }
+
+    .project-title {
+      font-family: var(--font-title);
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    .block { margin-bottom: 11px; }
+    .block-label {
+      font-size: 10px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+    .wip .block-label { color: var(--amber); }
+    .block-text {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    /* Pipeline */
+    .pipeline {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin: 10px 0 6px;
+    }
+    .pipe-node {
+      background: var(--bg1);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      font-size: 11px;
+      color: var(--muted);
+      padding: 3px 9px;
+      font-family: var(--font-body);
+      white-space: nowrap;
+    }
+    .pipe-node.hl {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .pipe-arrow {
+      color: var(--border);
+      font-size: 13px;
+      flex-shrink: 0;
+    }
+
+    /* Badges */
+    .badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
+    .badge {
+      background: var(--bg1);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      border-radius: 3px;
+      font-size: 11px;
+      padding: 3px 9px;
+      font-family: var(--font-body);
+    }
+    .badge.main {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .badge.wip {
+      border-color: rgba(245, 158, 11, 0.4);
+      color: var(--amber);
+    }
+
+    /* GitHub link */
+    .repo-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: var(--accent);
+      text-decoration: none;
+      margin-top: 14px;
+      opacity: 0.8;
+      transition: opacity 0.2s;
+    }
+    .repo-link:hover { opacity: 1; }
+    .repo-link svg { flex-shrink: 0; }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 30px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 860px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .footer-copy { font-size: 12px; color: var(--border); }
+    .footer-links { display: flex; gap: 20px; }
+    .footer-links a {
+      font-size: 12px;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--text); }
+
+    /* ── MOBILE ── */
+    @media (max-width: 640px) {
+      nav { padding: 0 20px; }
+      .nav-links { display: none; }
+      section, #hero { padding: 56px 20px; }
+      .divider { margin: 0 20px; width: auto; max-width: none; }
+      footer { padding: 24px 20px; }
+      h1 { font-size: 26px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-logo">sergio<span>.dev</span></a>
+  <ul class="nav-links">
+    <li><a href="#sobre-mi">Sobre mí</a></li>
+    <li><a href="#stack">Stack</a></li>
+    <li><a href="#proyectos">Proyectos</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-tag">
+    <span class="hero-tag-dot"></span>
+    Disponible para proyectos y posiciones
+  </div>
+  <h1>
+    Electrónica Industrial<br>
+    orientada a la <span class="hl">Integración con IA.</span>
+  </h1>
+  <p class="hero-sub">
+    Ingeniero en Electrónica Industrial y Automática con formación activa en IA Aplicada a la empresa. Construyo sistemas que conectan hardware real, lógica de control y automatización inteligente de procesos.
+  </p>
+  <div class="ctas">
+    <a href="#proyectos" class="btn-primary">Ver Proyectos</a>
+    <a href="#contacto" class="btn-secondary">Contacto</a>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SOBRE MÍ -->
+<section id="sobre-mi">
+  <div class="sec-label">Perfil</div>
+  <h2>Sobre mí</h2>
+  <p class="about-text">
+    Soy Ingeniero en Electrónica Industrial y Automática, con formación en <strong>control de sistemas, instrumentación y desarrollo de software embebido</strong>. Mi TFG consistió en el diseño e implementación de una base de datos y entorno gráfico para la gestión de datos en simulación de transporte ferroviario, lo que me dio experiencia directa en <strong>modelado de datos, procesado de ficheros YAML y CSV, diseño de esquemas SQLite y construcción de interfaces funcionales con Tkinter</strong>. Actualmente curso formación en <strong>Inteligencia Artificial Aplicada a la Empresa</strong>, con foco en automatización de procesos, agentes y prompt engineering orientado a producción. Trabajo en los dos extremos del stack: desde firmware en C++ sobre microcontroladores hasta scripting en Python para automatización, análisis de datos y entrenamiento de modelos.
+  </p>
+</section>
+
+<div class="divider"></div>
+
+<!-- STACK -->
+<section id="stack">
+  <div class="sec-label">Competencias</div>
+  <h2>Stack Tecnológico</h2>
+  <div class="stack-grid">
+    <div class="stack-card">
+      <div class="stack-card-title">Lenguajes</div>
+      <div class="stack-item main"><span class="stack-dot"></span>Python</div>
+      <div class="stack-item main"><span class="stack-dot"></span>SQL · SQLite</div>
+      <div class="stack-item main"><span class="stack-dot"></span>C++ (Arduino)</div>
+      <div class="stack-item main"><span class="stack-dot"></span>MATLAB</div>
+      <div class="stack-item"><span class="stack-dot"></span>Java · HTML/CSS/JS</div>
+      <div class="stack-item"><span class="stack-dot"></span>PHP · C#</div>
+    </div>
+    <div class="stack-card">
+      <div class="stack-card-title">Hardware · Control</div>
+      <div class="stack-item main"><span class="stack-dot"></span>ESP32 · Arduino</div>
+      <div class="stack-item main"><span class="stack-dot"></span>Sensores ADC / Digital</div>
+      <div class="stack-item main"><span class="stack-dot"></span>RF 433 MHz</div>
+      <div class="stack-item"><span class="stack-dot"></span>Electrónica Digital</div>
+      <div class="stack-item"><span class="stack-dot"></span>Instrumentación</div>
+    </div>
+    <div class="stack-card">
+      <div class="stack-card-title">IA · Herramientas</div>
+      <div class="stack-item main"><span class="stack-dot"></span>PyTorch (en uso)</div>
+      <div class="stack-item main"><span class="stack-dot"></span>IA Aplicada (en curso)</div>
+      <div class="stack-item main"><span class="stack-dot"></span>Prompt Engineering</div>
+      <div class="stack-item"><span class="stack-dot"></span>PyCharm · VS Code</div>
+      <div class="stack-item"><span class="stack-dot"></span>Git · GitHub</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PROYECTOS -->
+<section id="proyectos">
+  <div class="sec-label">Trabajos</div>
+  <h2>Proyectos Seleccionados</h2>
+
+  <!-- TFG -->
+  <div class="project-card">
+    <div class="card-top">
+      <div class="card-tags">
+        <span class="tag">TFG</span>
+        <span class="tag">Python · SQLite</span>
+      </div>
+      <span class="tag-pub">GitHub público</span>
+    </div>
+    <div class="project-title">Base de Datos y Entorno Gráfico para Gestión de Datos en Simulación Ferroviaria</div>
+    <div class="block">
+      <div class="block-label">Reto</div>
+      <div class="block-text">El simulador de transporte ferroviario genera datos de salida en CSV a partir de configuraciones definidas en ficheros YAML independientes (oferta y modelado de demanda). Estos datos requerían persistencia estructurada, consultas eficientes y una interfaz de gestión accesible para perfiles no técnicos.</div>
+    </div>
+    <div class="block">
+      <div class="block-label">Pipeline de datos</div>
+      <div class="pipeline">
+        <span class="pipe-node">YAML oferta</span>
+        <span class="pipe-arrow">→</span>
+        <span class="pipe-node">YAML demanda</span>
+        <span class="pipe-arrow">→</span>
+        <span class="pipe-node">Simulador</span>
+        <span class="pipe-arrow">→</span>
+        <span class="pipe-node">CSV salida</span>
+        <span class="pipe-arrow">→</span>
+        <span class="pipe-node hl">SQLite</span>
+        <span class="pipe-arrow">→</span>
+        <span class="pipe-node hl">Tkinter GUI</span>
+      </div>
+    </div>
+    <div class="block">
+      <div class="block-label">Solución</div>
+      <div class="block-text">Ingestión y parseo de ficheros YAML de configuración y CSV de resultados en Python, diseño del esquema relacional en SQLite y desarrollo de un entorno gráfico con Tkinter para la visualización, filtrado y gestión de los registros de simulación.</div>
+    </div>
+    <div class="badges">
+      <span class="badge main">Python</span>
+      <span class="badge main">SQLite</span>
+      <span class="badge main">Tkinter</span>
+      <span class="badge">YAML</span>
+      <span class="badge">CSV</span>
+      <span class="badge">SQL</span>
+      <span class="badge">Modelado de datos</span>
+    </div>
+    <a class="repo-link" href="https://github.com/Sergioba99/TFG-Gestor_De_Bases_de_Datos" target="_blank" rel="noopener">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+      github.com/Sergioba99/TFG-Gestor_De_Bases_de_Datos
+    </a>
+  </div>
+
+  <!-- Vital -->
+  <div class="project-card wip">
+    <div class="card-top">
+      <div class="card-tags">
+        <span class="tag-wip">En desarrollo</span>
+        <span class="tag">PyTorch · Audio ML</span>
+      </div>
+    </div>
+    <div class="project-title">Síntesis Inversa con IA: Predicción de Presets de Vital desde Audio</div>
+    <div class="block">
+      <div class="block-label">Reto</div>
+      <div class="block-text">Replicar un sonido en un sintetizador virtual requiere ajuste manual de decenas de parámetros interdependientes (osciladores, filtros, envolventes, efectos), un proceso costoso incluso para usuarios con experiencia en síntesis.</div>
+    </div>
+    <div class="block">
+      <div class="block-label">Solución</div>
+      <div class="block-text">Modelo CNN entrenado sobre espectrogramas Mel que recibe una muestra de 2-5 segundos y predice los parámetros del sintetizador Vital como vector de regresión continua, generando un preset listo para cargar. Fase actual: construcción del generador de dataset con pares (audio renderizado → parámetros fuente) producidos programáticamente.</div>
+    </div>
+    <div class="block">
+      <div class="block-label">Estado actual</div>
+      <div class="block-text">Generador de dataset funcional en desarrollo. Arquitectura CNN + cabeza de regresión multisalida definida. Entrenamiento pendiente de dataset suficiente.</div>
+    </div>
+    <div class="badges">
+      <span class="badge wip">PyTorch</span>
+      <span class="badge wip">CNN</span>
+      <span class="badge wip">Espectrograma Mel</span>
+      <span class="badge">Python</span>
+      <span class="badge">Síntesis de audio</span>
+      <span class="badge">Regresión multisalida</span>
+    </div>
+  </div>
+
+  <!-- ESP32 -->
+  <div class="project-card wip">
+    <div class="card-top">
+      <div class="card-tags">
+        <span class="tag-wip">En expansión</span>
+        <span class="tag">ESP32 · RF 433 MHz</span>
+      </div>
+    </div>
+    <div class="project-title">Hub de Control Climático con ESP32, DHT11 y Transmisión RF 433 MHz</div>
+    <div class="block">
+      <div class="block-label">Reto</div>
+      <div class="block-text">Control y monitorización de temperatura y humedad en tiempo real sin infraestructura centralizada, con capacidad de actuar sobre un ventilador RF existente desde una interfaz web local, sin cableado adicional.</div>
+    </div>
+    <div class="block">
+      <div class="block-label">Solución</div>
+      <div class="block-text">Nodo ESP32 con sensor DHT11 y emisor RF a 433 MHz para control del ventilador. Interfaz web embebida servida desde el microcontrolador, construida en HTML/CSS/JS con layout Flexbox. Expansión planificada: control PID o con lógica difusa para regulación de velocidad y temporizadores personalizados.</div>
+    </div>
+    <div class="badges">
+      <span class="badge main">C++ Arduino</span>
+      <span class="badge main">ESP32</span>
+      <span class="badge">DHT11</span>
+      <span class="badge">RF 433 MHz</span>
+      <span class="badge">HTML/CSS/JS</span>
+      <span class="badge">PID · Fuzzy Logic</span>
+    </div>
+  </div>
+
+  <!-- TransportMe -->
+  <div class="project-card">
+    <div class="card-top">
+      <div class="card-tags">
+        <span class="tag">Java</span>
+        <span class="tag">Plugin Spigot</span>
+      </div>
+      <span class="tag-pub">SpigotMC</span>
+    </div>
+    <div class="project-title">TransportMe — Plugin de Gestión de Teletransporte para Servidores Minecraft</div>
+    <div class="block">
+      <div class="block-label">Reto</div>
+      <div class="block-text">Implementar un sistema de teletransporte configurable y robusto para servidores Minecraft, con gestión de puntos nombrados, permisos granulares y lógica de validación de condiciones, integrable en entornos de producción.</div>
+    </div>
+    <div class="block">
+      <div class="block-label">Solución</div>
+      <div class="block-text">Plugin desarrollado sobre la API de Spigot en Java, con arquitectura orientada a eventos, persistencia de datos de puntos de teletransporte y sistema de comandos con gestión de permisos por rol.</div>
+    </div>
+    <div class="badges">
+      <span class="badge main">Java</span>
+      <span class="badge">Spigot API</span>
+      <span class="badge">OOP</span>
+      <span class="badge">Persistencia de datos</span>
+    </div>
+  </div>
+
+  <!-- DS3 Backup -->
+  <div class="project-card">
+    <div class="card-top">
+      <div class="card-tags">
+        <span class="tag">Python</span>
+        <span class="tag">Utilidad</span>
+      </div>
+      <span class="tag-pub">Nexusmods</span>
+    </div>
+    <div class="project-title">Gestor de Backups de Partidas para Dark Souls 3</div>
+    <div class="block">
+      <div class="block-label">Reto</div>
+      <div class="block-text">Dark Souls 3 no ofrece gestión nativa de copias de seguridad de partidas, exponiendo al usuario a pérdida irreversible de progreso por corrupción o sobreescritura accidental del archivo de guardado.</div>
+    </div>
+    <div class="block">
+      <div class="block-label">Solución</div>
+      <div class="block-text">Herramienta en Python que automatiza detección de rutas de guardado, gestiona snapshots con nombre y timestamp, y permite restauración selectiva. Publicada en Nexusmods con usuarios activos. En desarrollo: soporte multi-juego con arquitectura extensible por perfil de título.</div>
+    </div>
+    <div class="badges">
+      <span class="badge main">Python</span>
+      <span class="badge">Automatización</span>
+      <span class="badge">File I/O</span>
+      <span class="badge">Nexusmods</span>
+    </div>
+  </div>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <div class="sec-label">Contacto</div>
+  <h2>Hablemos</h2>
+  <p class="about-text" style="margin-bottom: 28px;">
+    Disponible para posiciones junior, colaboraciones técnicas y proyectos freelance en el ámbito de la electrónica, la automatización y la IA aplicada.
+  </p>
+  <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+    <a href="https://github.com/Sergioba99" target="_blank" rel="noopener" class="btn-secondary" style="display:inline-flex;align-items:center;gap:8px;">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+      GitHub
+    </a>
+    <a href="mailto:tucorreo@email.com" class="btn-primary">Enviar email</a>
+  </div>
+</section>
+
+<footer>
+  <span class="footer-copy">© 2025 · Sergio Barroso</span>
+  <div class="footer-links">
+    <a href="https://github.com/Sergioba99" target="_blank" rel="noopener">GitHub</a>
+    <a href="#" target="_blank" rel="noopener">SpigotMC</a>
+    <a href="#" target="_blank" rel="noopener">Nexusmods</a>
+    <a href="mailto:tucorreo@email.com">Email</a>
+  </div>
+</footer>
+
+</body>
+</html>
