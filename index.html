@@ -491,19 +491,65 @@
       <div class="block-label">Reto</div>
       <div class="block-text">El simulador de transporte ferroviario genera datos de salida en CSV a partir de configuraciones definidas en ficheros YAML independientes (oferta y modelado de demanda). Estos datos requerían persistencia estructurada, consultas eficientes y una interfaz de gestión accesible para perfiles no técnicos.</div>
     </div>
-    <div class="block">
+<div class="block">
       <div class="block-label">Pipeline de datos</div>
-      <div class="pipeline">
-        <span class="pipe-node">YAML oferta</span>
-        <span class="pipe-arrow">→</span>
-        <span class="pipe-node">YAML demanda</span>
-        <span class="pipe-arrow">→</span>
-        <span class="pipe-node">CSV resultados</span>
-        <span class="pipe-arrow">⇄</span>
-        <span class="pipe-node hl">SQLite</span>
-        <span class="pipe-arrow">⇄</span>
-        <span class="pipe-node hl">Tkinter GUI</span>
-      </div>
+      <svg width="100%" viewBox="0 0 680 200" xmlns="http://www.w3.org/2000/svg" style="margin-top:10px;max-width:660px;">
+        <defs>
+          <marker id="arr-r" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M2 1L8 5L2 9" fill="none" stroke="#4b5563" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </marker>
+          <marker id="arr-l" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M8 1L2 5L8 9" fill="none" stroke="#3767f6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </marker>
+          <marker id="arr-r-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M2 1L8 5L2 9" fill="none" stroke="#3767f6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </marker>
+        </defs>
+
+        <!-- Archivos fuente (izquierda) -->
+        <rect x="1" y="20" width="120" height="40" rx="5" fill="#374151" stroke="#4b5563" stroke-width="1"/>
+        <text x="61" y="36" text-anchor="middle" fill="#9ca3af" font-family="Roboto,sans-serif" font-size="11">YAML oferta</text>
+        <text x="61" y="52" text-anchor="middle" fill="#6b7280" font-family="Roboto,sans-serif" font-size="10">Configuración</text>
+
+        <rect x="1" y="80" width="120" height="40" rx="5" fill="#374151" stroke="#4b5563" stroke-width="1"/>
+        <text x="61" y="96" text-anchor="middle" fill="#9ca3af" font-family="Roboto,sans-serif" font-size="11">YAML demanda</text>
+        <text x="61" y="112" text-anchor="middle" fill="#6b7280" font-family="Roboto,sans-serif" font-size="10">Configuración</text>
+
+        <rect x="1" y="140" width="120" height="40" rx="5" fill="#374151" stroke="#4b5563" stroke-width="1"/>
+        <text x="61" y="156" text-anchor="middle" fill="#9ca3af" font-family="Roboto,sans-serif" font-size="11">CSV resultados</text>
+        <text x="61" y="172" text-anchor="middle" fill="#6b7280" font-family="Roboto,sans-serif" font-size="10">Salida simulador</text>
+
+        <!-- Flechas archivos → SQLite (importación) -->
+        <line x1="122" y1="40" x2="248" y2="88" stroke="#4b5563" stroke-width="1" marker-end="url(#arr-r)"/>
+        <line x1="122" y1="100" x2="248" y2="100" stroke="#4b5563" stroke-width="1" marker-end="url(#arr-r)"/>
+        <line x1="122" y1="160" x2="248" y2="112" stroke="#4b5563" stroke-width="1" marker-end="url(#arr-r)"/>
+
+        <!-- Flechas SQLite → archivos (exportación) -->
+        <line x1="248" y1="84" x2="122" y2="44" stroke="#3767f6" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#arr-l)"/>
+        <line x1="248" y1="96" x2="122" y2="96" stroke="#3767f6" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#arr-l)"/>
+        <line x1="248" y1="108" x2="122" y2="156" stroke="#3767f6" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#arr-l)"/>
+
+        <!-- SQLite (centro) -->
+        <rect x="250" y="68" width="120" height="64" rx="5" fill="#1f2937" stroke="#3767f6" stroke-width="1.5"/>
+        <text x="310" y="94" text-anchor="middle" fill="#f9fafb" font-family="Roboto,sans-serif" font-size="13" font-weight="500">SQLite</text>
+        <text x="310" y="112" text-anchor="middle" fill="#3767f6" font-family="Roboto,sans-serif" font-size="10">Base de datos</text>
+
+        <!-- Flechas SQLite ↔ GUI -->
+        <line x1="371" y1="88" x2="458" y2="88" stroke="#4b5563" stroke-width="1" marker-end="url(#arr-r)"/>
+        <line x1="458" y1="112" x2="371" y2="112" stroke="#3767f6" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#arr-r-blue)"/>
+
+        <!-- Tkinter GUI (derecha) -->
+        <rect x="460" y="68" width="120" height="64" rx="5" fill="#1f2937" stroke="#3767f6" stroke-width="1.5"/>
+        <text x="520" y="94" text-anchor="middle" fill="#f9fafb" font-family="Roboto,sans-serif" font-size="13" font-weight="500">Tkinter GUI</text>
+        <text x="520" y="112" text-anchor="middle" fill="#3767f6" font-family="Roboto,sans-serif" font-size="10">Interfaz gráfica</text>
+
+        <!-- Leyenda -->
+        <line x1="250" y1="170" x2="280" y2="170" stroke="#4b5563" stroke-width="1" marker-end="url(#arr-r)"/>
+        <text x="286" y="174" fill="#6b7280" font-family="Roboto,sans-serif" font-size="10">Importación</text>
+        <line x1="360" y1="170" x2="390" y2="170" stroke="#3767f6" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#arr-r-blue)"/>
+        <text x="396" y="174" fill="#6b7280" font-family="Roboto,sans-serif" font-size="10">Exportación / reconstrucción</text>
+      </svg>
+    </div>
       <div style="margin-top:8px;font-size:12px;color:var(--muted);">
         La interfaz permite importar los archivos a la base de datos y reconstruir cualquier archivo original a partir de los registros almacenados.
       </div>
