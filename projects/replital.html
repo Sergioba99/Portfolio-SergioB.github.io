@@ -1,0 +1,32 @@
+<!-- 02 — Vital -->
+    <div class="pv-panel">
+      <div class="project-card wip">
+        <div class="card-top">
+          <div class="card-tags">
+            <span class="tag-wip">En desarrollo</span>
+            <span class="tag">PyTorch · Audio ML</span>
+          </div>
+        </div>
+        <div class="project-title">Síntesis Inversa con IA: Predicción de Presets de Vital desde Audio</div>
+        <div class="block">
+          <div class="block-label">Reto</div>
+          <div class="block-text">Replicar un sonido en un sintetizador virtual requiere ajuste manual de decenas de parámetros interdependientes (osciladores, filtros, envolventes, efectos), un proceso costoso incluso para usuarios con experiencia en síntesis.</div>
+        </div>
+        <div class="block">
+          <div class="block-label">Solución</div>
+          <div class="block-text">Modelo CNN entrenado sobre espectrogramas Mel que recibe una muestra de 2-5 segundos y predice los parámetros del sintetizador Vital como vector de regresión continua, generando un preset listo para cargar. Fase actual: construcción del generador de dataset con pares (audio renderizado → parámetros fuente) producidos programáticamente.</div>
+        </div>
+        <div class="block">
+          <div class="block-label">Estado actual</div>
+          <div class="block-text">Generador de dataset funcional en desarrollo. Arquitectura CNN + cabeza de regresión multisalida definida. Entrenamiento pendiente de dataset suficiente.</div>
+        </div>
+        <div class="badges">
+          <span class="badge wip">PyTorch</span>
+          <span class="badge wip">CNN</span>
+          <span class="badge wip">Espectrograma Mel</span>
+          <span class="badge">Python</span>
+          <span class="badge">Síntesis de audio</span>
+          <span class="badge">Regresión multisalida</span>
+        </div>
+      </div>
+    </div>
