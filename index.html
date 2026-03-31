@@ -88,8 +88,6 @@
 <section id="proyectos">
   <div class="sec-label">Trabajos</div>
   <h2>Proyectos Seleccionados</h2>
-
-  <!-- Botones numerados -->
   <div class="pv-nav">
     <button class="pv-btn active" onclick="loadProject(0)">01</button>
     <button class="pv-btn" onclick="loadProject(1)">02</button>
@@ -99,7 +97,7 @@
   </div>
 </section>
 
-<!-- Visor ancho completo con flechas a los lados -->
+<!-- Visor con flechas laterales -->
 <div class="pv-wrapper">
   <button class="pv-arrow" id="pv-prev" onclick="navigateProject(-1)" aria-label="Proyecto anterior">&#8249;</button>
   <div class="pv-viewer" id="pv-viewer">
@@ -133,10 +131,6 @@
 </footer>
 
 <script>
-  /* ── LISTA DE PROYECTOS ────────────────────────────────────────
-     Ajusta los nombres de archivo a los que tienes en GitHub.
-     El orden aquí corresponde a los botones 01, 02, 03, 04, 05.
-  ──────────────────────────────────────────────────────────────── */
   const PROJECTS = [
     'projects/tfg.html',
     'projects/replital.html',
@@ -156,6 +150,13 @@
     nextBtn.disabled = currentIndex === PROJECTS.length - 1;
   }
 
+  function centerArrows() {
+    const h = viewer.offsetHeight;
+    const offset = Math.round(h / 2) - 18;
+    prevBtn.style.top = offset + 'px';
+    nextBtn.style.top = offset + 'px';
+  }
+
   function loadProject(index) {
     currentIndex = index;
     btns.forEach((b, i) => b.classList.toggle('active', i === index));
@@ -171,16 +172,8 @@
         viewer.classList.remove('pv-fade');
         void viewer.offsetWidth;
         viewer.classList.add('pv-fade');
-        .then(html => {
-        viewer.innerHTML = html;
-        viewer.classList.remove('pv-fade');
-        void viewer.offsetWidth;
-        viewer.classList.add('pv-fade');
         viewer.querySelectorAll('.carousel').forEach(c => initCarousel(c.id));
-        // Centrar flechas respecto a la altura de la tarjeta
         centerArrows();
-      })
-        viewer.querySelectorAll('.carousel').forEach(c => initCarousel(c.id));
       })
       .catch(() => {
         viewer.innerHTML = '<div class="pv-loading">No se pudo cargar el proyecto.</div>';
@@ -243,13 +236,6 @@
     const dots = carousel.querySelectorAll('.carousel-dot');
     carousel.querySelector('.carousel-track').style.transform = `translateX(-${index * 100}%)`;
     dots.forEach((d, i) => d.classList.toggle('active', i === index));
-  }
-
-  function centerArrows() {
-    const cardHeight = viewer.offsetHeight;
-    const arrowOffset = Math.round(cardHeight / 2) - 18;
-    prevBtn.style.top = arrowOffset + 'px';
-    nextBtn.style.top = arrowOffset + 'px';
   }
 
   loadProject(0);
