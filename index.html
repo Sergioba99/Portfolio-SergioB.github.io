@@ -89,17 +89,22 @@
   <div class="sec-label">Trabajos</div>
   <h2>Proyectos Seleccionados</h2>
 
-  <!-- Barra de navegación: botones numerados + flechas -->
+<!-- Barra de navegación: solo botones numerados -->
   <div class="pv-nav">
-    <button class="pv-arrow" id="pv-prev" onclick="navigateProject(-1)" aria-label="Proyecto anterior">&#8249;</button>
-    <div class="pv-btns">
-      <button class="pv-btn active" onclick="loadProject(0)">01</button>
-      <button class="pv-btn" onclick="loadProject(1)">02</button>
-      <button class="pv-btn" onclick="loadProject(2)">03</button>
-      <button class="pv-btn" onclick="loadProject(3)">04</button>
-      <button class="pv-btn" onclick="loadProject(4)">05</button>
+    <button class="pv-btn active" onclick="loadProject(0)">01</button>
+    <button class="pv-btn" onclick="loadProject(1)">02</button>
+    <button class="pv-btn" onclick="loadProject(2)">03</button>
+    <button class="pv-btn" onclick="loadProject(3)">04</button>
+    <button class="pv-btn" onclick="loadProject(4)">05</button>
+  </div>
+
+  <!-- Visor con flechas laterales -->
+  <div class="pv-wrapper">
+    <button class="pv-arrow pv-arrow-left" id="pv-prev" onclick="navigateProject(-1)" aria-label="Proyecto anterior">&#8249;</button>
+    <div class="pv-viewer" id="pv-viewer">
+      <div class="pv-loading">Cargando proyecto...</div>
     </div>
-    <button class="pv-arrow" id="pv-next" onclick="navigateProject(1)" aria-label="Proyecto siguiente">&#8250;</button>
+    <button class="pv-arrow pv-arrow-right" id="pv-next" onclick="navigateProject(1)" aria-label="Proyecto siguiente">&#8250;</button>
   </div>
 
   <!-- Área de contenido cargada dinámicamente -->
