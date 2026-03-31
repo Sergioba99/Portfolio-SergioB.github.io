@@ -154,5 +154,5 @@
       console.error('Error cargando componente', id, err);
     }
   }
-
+  loadComponent('main-nav', '../html/navigation.html');
   loadComponent('main-footer', '../html/footer.html');
