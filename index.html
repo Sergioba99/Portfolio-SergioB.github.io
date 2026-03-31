@@ -171,6 +171,15 @@
         viewer.classList.remove('pv-fade');
         void viewer.offsetWidth;
         viewer.classList.add('pv-fade');
+        .then(html => {
+        viewer.innerHTML = html;
+        viewer.classList.remove('pv-fade');
+        void viewer.offsetWidth;
+        viewer.classList.add('pv-fade');
+        viewer.querySelectorAll('.carousel').forEach(c => initCarousel(c.id));
+        // Centrar flechas respecto a la altura de la tarjeta
+        centerArrows();
+      })
         viewer.querySelectorAll('.carousel').forEach(c => initCarousel(c.id));
       })
       .catch(() => {
@@ -234,6 +243,13 @@
     const dots = carousel.querySelectorAll('.carousel-dot');
     carousel.querySelector('.carousel-track').style.transform = `translateX(-${index * 100}%)`;
     dots.forEach((d, i) => d.classList.toggle('active', i === index));
+  }
+
+  function centerArrows() {
+    const cardHeight = viewer.offsetHeight;
+    const arrowOffset = Math.round(cardHeight / 2) - 18;
+    prevBtn.style.top = arrowOffset + 'px';
+    nextBtn.style.top = arrowOffset + 'px';
   }
 
   loadProject(0);
