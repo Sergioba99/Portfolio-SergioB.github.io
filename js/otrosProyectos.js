@@ -12,7 +12,6 @@
     {name: "Fan Control", sub: "ESP32 · Arduino", file: "projects/fanControl.html"},
   ];
 
-  
   let currentIndex = 0;
   const viewer    = document.getElementById('op-viewer');
   const sideList  = document.getElementById('op-sidebar-list');
