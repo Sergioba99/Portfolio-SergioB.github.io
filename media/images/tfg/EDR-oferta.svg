@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generado por Microsoft Visio, SVG Export EDR-oferta.svg Page-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		width="11.0236in" height="14.5669in" viewBox="0 0 793.701 1048.82" xml:space="preserve" color-interpolation-filters="sRGB"
+		class="st15">
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st2 {stroke:#000000;stroke-dasharray:2.25,2.25;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st3 {fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st4 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st5 {fill:#000000;font-family:Calibri;font-size:1.99999em}
+		.st6 {fill:#cdcdcd;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st7 {fill:#000000;font-family:Calibri;font-size:0.833336em}
+		.st8 {fill:#ffffff}
+		.st9 {fill:#000000;font-family:Calibri;font-size:0.833336em;font-weight:bold}
+		.st10 {font-size:1em;text-decoration:underline}
+		.st11 {font-size:1em;font-weight:normal}
+		.st12 {font-size:1em}
+		.st13 {marker-end:url(#mrkr29-388);marker-start:url(#mrkr30-386);stroke:#000000;stroke-dasharray:3.6,3.6;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.2}
+		.st14 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.23255813953489}
+		.st15 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs id="Markers">
+		<g id="lend30">
+			<path
+					d="M 2.25 0.75 C 1.83579 0.75 1.5 0.414214 1.5 0 1.5 -0.414214 1.83579 -0.75 2.25 -0.75 2.66421 -0.75 3 -0.414214 3 0 3 0.414214 2.66421 0.75 2.25 0.75 Z M 0.75 -0.75 L 0.75 0.75 M 1.5 0 L 0 0 "
+					style="stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+		</g>
+		<marker id="mrkr30-386" class="st14" refX="12.6" orient="auto" markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend30" transform="scale(4.2999999999999) "/>
+		</marker>
+		<g id="lend29">
+			<path
+					d="M 2.25 0.75 C 1.83579 0.75 1.5 0.414214 1.5 0 1.5 -0.414214 1.83579 -0.75 2.25 -0.75 2.66421 -0.75 3 -0.414214 3 0 3 0.414214 2.66421 0.75 2.25 0.75 Z M 0 -0.75 L 1.5 0 L 0 0.75 M 1.5 0 L 0 0 "
+					style="stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+		</g>
+		<marker id="mrkr29-388" class="st14" refX="-12.9" orient="auto" markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend29" transform="scale(-4.2999999999999,-4.2999999999999) "/>
+		</marker>
+	</defs>
+	<g>
+		<title>FondoDeVisio-1</title>
+		<g id="group1-1" transform="translate(18,-18)">
+			<title>Registro</title>
+			<g id="shape2-2" transform="translate(523.458,0)">
+				<title>Hoja.2</title>
+				<rect x="0" y="1024.17" width="224.507" height="24.6484" class="st1"/>
+			</g>
+			<g id="shape3-4" transform="translate(9.77434,-1002.98)">
+				<title>Hoja.3</title>
+				<path d="M0 1048.82 L738.15 1048.82" class="st2"/>
+			</g>
+			<g id="group5-7" transform="translate(-0.14692,-993.061)">
+				<title>Hoja.5</title>
+				<g id="shape6-8" transform="translate(2.8345,-2.8345)">
+					<title>Hoja.6</title>
+					<ellipse cx="7.08676" cy="1041.73" rx="7.08676" ry="7.08676" class="st3"/>
+				</g>
+				<g id="shape7-10" transform="translate(0,-9.92126)">
+					<title>Hoja.7</title>
+					<path d="M0 1048.82 L19.84 1048.82" class="st4"/>
+				</g>
+				<g id="shape8-13" transform="translate(1058.74,1028.98) rotate(90)">
+					<title>Hoja.8</title>
+					<path d="M0 1048.82 L19.84 1048.82" class="st4"/>
+				</g>
+			</g>
+			<g id="group9-16" transform="translate(738.005,-993.061)">
+				<title>Hoja.9</title>
+				<g id="shape10-17" transform="translate(2.8345,-2.8345)">
+					<title>Hoja.10</title>
+					<ellipse cx="7.08676" cy="1041.73" rx="7.08676" ry="7.08676" class="st3"/>
+				</g>
+				<g id="shape11-19" transform="translate(0,-9.92126)">
+					<title>Hoja.11</title>
+					<path d="M0 1048.82 L19.84 1048.82" class="st4"/>
+				</g>
+				<g id="shape12-22" transform="translate(1058.74,1028.98) rotate(90)">
+					<title>Hoja.12</title>
+					<path d="M0 1048.82 L19.84 1048.82" class="st4"/>
+				</g>
+			</g>
+			<g id="shape13-25" transform="translate(9.73646,-974.839)">
+				<title>Hoja.13</title>
+				<path d="M0 1020.68 L0 1048.82 L738.23 1048.82 L738.23 1020.68" class="st2"/>
+			</g>
+			<g id="shape14-28" transform="translate(37.885,-973.077)">
+				<title>Hoja.14</title>
+				<desc>Esquema de diseño relacional del archivo de oferta</desc>
+				<rect x="0" y="1019.33" width="681.931" height="29.4857" class="st1"/>
+				<text x="92.23" y="1041.28" class="st5">Esquema de diseño relacional del archivo de oferta</text>			</g>
+		</g>
+	</g>
+	<g>
+		<title>Página-1</title>
+		<g id="group4-31" transform="translate(608.995,-557.447)">
+			<title>Entidad</title>
+			<g id="shape5-32" transform="translate(0,-92.0039)">
+				<title>Hoja.5</title>
+				<desc>SERVICE</desc>
+				<rect x="0" y="1028.82" width="146.813" height="20.0036" class="st6"/>
+				<text x="56.75" y="1041.82" class="st7">SERVICE</text>			</g>
+			<g id="shape6-35">
+				<title>Hoja.6</title>
+				<desc>PK ID DATE FK4 LINE FK2 TIME SLOT FK3 TRAIN_SERVICE_PROVIDER ...</desc>
+				<path d="M0 1048.82 L146.81 1048.82 L146.81 956.82 L0 956.82 L0 1048.82 Z" class="st8"/>
+				<path d="M0 1048.82 L146.81 1048.82 L146.81 956.82 L0 956.82 L0 1048.82" class="st4"/>
+				<path d="M26.33 1048.82 L26.33 956.82" class="st4"/>
+				<path d="M0 976.53 L146.81 976.53" class="st4"/>
+				<text x="4" y="969.82" class="st9">PK <tspan dx="1.554em" class="st10">ID  </tspan><tspan x="4" dy="2.4em"
+							class="st11"> </tspan><tspan dx="2.407em" class="st11">DATE </tspan><tspan x="4" dy="1.2em"
+							class="st11">FK4 </tspan><tspan dx="1.148em" class="st11">LINE </tspan><tspan x="4" dy="1.2em"
+							class="st11">FK2 </tspan><tspan dx="1.148em" class="st11">TIME SLOT </tspan><tspan x="4" dy="1.2em"
+							class="st11">FK3 </tspan><tspan dx="1.148em" class="st11">TRAIN_SERVICE_PROVIDER </tspan><tspan x="4"
+							dy="1.2em" class="st11">FK1 </tspan><tspan dx="1.148em" class="st11">ROLLING STOCK</tspan></text>			</g>
+		</g>
+		<g id="group7-52" transform="translate(503.143,-39.207)">
+			<title>Entidad.7</title>
+			<g id="shape8-53" transform="translate(0,-56.0037)">
+				<title>Hoja.8</title>
+				<desc>LINE</desc>
+				<rect x="0" y="1028.82" width="80.1335" height="20.0036" class="st6"/>
+				<text x="31.04" y="1041.82" class="st7">LINE</text>			</g>
+			<g id="shape9-56">
+				<title>Hoja.9</title>
+				<desc>PK ID NAME FK2 CORRIDOR</desc>
+				<path d="M0 1048.82 L80.13 1048.82 L80.13 992.82 L0 992.82 L0 1048.82 Z" class="st8"/>
+				<path d="M0 1048.82 L80.13 1048.82 L80.13 992.82 L0 992.82 L0 1048.82" class="st4"/>
+				<path d="M26.33 1048.82 L26.33 992.82" class="st4"/>
+				<path d="M0 1013.82 L80.13 1013.82" class="st4"/>
+				<text x="4" y="1005.82" class="st9">PK <tspan dx="1.554em" class="st10">ID  </tspan><tspan x="4" dy="2.4em"
+							class="st11"> </tspan><tspan dx="2.407em" class="st11">NAME </tspan><tspan x="4" dy="1.2em"
+							class="st11">FK2 </tspan><tspan dx="1.148em" class="st11">CORRIDOR</tspan></text>			</g>
+		</g>
+		<g id="group10-67" transform="translate(358.958,-465.029)">
+			<title>Entidad.17</title>
+			<g id="shape11-68" transform="translate(0,-68.0038)">
+				<title>Hoja.11</title>
+				<desc>TRAIN SERVICE PROVIDER</desc>
+				<rect x="0" y="1028.82" width="123.8" height="20.0036" class="st6"/>
+				<text x="9.51" y="1041.82" class="st7">TRAIN SERVICE PROVIDER</text>			</g>
+			<g id="shape12-71">
+				<title>Hoja.12</title>
+				<desc>PK ID ID_ON_FILE NAME ROLLING STOCK : [List]</desc>
+				<path d="M0 1048.82 L123.8 1048.82 L123.8 980.82 L0 980.82 L0 1048.82 Z" class="st8"/>
+				<path d="M0 1048.82 L123.8 1048.82 L123.8 980.82 L0 980.82 L0 1048.82" class="st4"/>
+				<path d="M21.83 1048.82 L21.83 980.82" class="st4"/>
+				<path d="M0 1001.22 L123.8 1001.22" class="st4"/>
+				<text x="4" y="993.82" class="st9">PK <tspan dx="1.104em" class="st10">ID  </tspan><tspan x="4" dy="2.4em"
+							class="st11"> </tspan><tspan dx="1.957em" class="st11">ID_ON_FILE </tspan><tspan x="4" dy="1.2em"
+							class="st11"> </tspan><tspan dx="1.957em" class="st11">NAME </tspan><tspan x="4" dy="1.2em"
+							class="st11"> </tspan><tspan dx="1.957em" class="st11">ROLLING STOCK : [List]</tspan></text>			</g>
+		</g>
+		<g id="group13-84" transform="translate(328.145,-653.797)">
+			<title>Entidad.21</title>
+			<g id="shape14-85" transform="translate(0,-68.0038)">
+				<title>Hoja.14</title>
+				<desc>ROLLING STOCK</desc>
+				<rect x="0" y="1028.82" width="80.0011" height="20.0036" class="st6"/>
+				<text x="7.69" y="1041.82" class="st7">ROLLING STOCK</text>			</g>
+			<g id="shape15-88">
+				<title>Hoja.15</title>
+				<desc>PK ID ID_ON_FILE NAME SEATS</desc>
+				<path d="M0 1048.82 L80 1048.82 L80 980.82 L0 980.82 L0 1048.82 Z" class="st8"/>
+				<path d="M0 1048.82 L80 1048.82 L80 980.82 L0 980.82 L0 1048.82" class="st4"/>
+				<path d="M21.83 1048.82 L21.83 980.82" class="st4"/>
+				<path d="M0 1001.22 L80 1001.22" class="st4"/>
+				<text x="4" y="993.82" class="st9">PK <tspan dx="1.104em" class="st10">ID  </tspan><tspan x="4" dy="2.4em"
+							class="st11"> </tspan><tspan dx="1.957em" class="st11">ID_ON_FILE </tspan><tspan x="4" dy="1.2em"
+							class="st11"> </tspan><tspan dx="1.957em" class="st11">NAME </tspan><tspan x="4" dy="1.2em"
+							class="st11"> </tspan><tspan dx="1.957em" class="st11">SEATS</tspan></text>			</g>
+		</g>
+		<g id="group16-101" transform="translate(329.656,-759.01)">
+			<title>Entidad.26</title>
+			<g id="shape17-102" transform="translate(0,-56.0037)">
+				<title>Hoja.17</title>
+				<desc>TIME SLOT</desc>
+				<rect x="0" y="1028.82" width="57.6478" height="20.0036" class="st6"/>
+				<text x="7.13" y="1041.82" class="st7">TIME SLOT</text>			</g>
+			<g id="shape18-105">
+				<title>Hoja.18</title>
+				<desc>PK ID START END</desc>
+				<path d="M0 1048.82 L57.65 1048.82 L57.65 992.82 L0 992.82 L0 1048.82 Z" class="st8"/>
+				<path d="M0 1048.82 L57.65 1048.82 L57.65 992.82 L0 992.82 L0 1048.82" class="st4"/>
+				<path d="M21.83 1048.82 L21.83 992.82" class="st4"/>
+				<path d="M0 1013.82 L57.65 1013.82" class="st4"/>
+				<text x="4" y="1005.82" class="st9">PK <tspan dx="1.104em" class="st10">ID  </tspan><tspan x="4" dy="2.4em"
+							class="st11"> </tspan><tspan dx="1.957em" class="st11">START </tspan><tspan x="4" dy="1.2em"
+							class="st11"> </tspan><tspan dx="1.957em" class="st11">END</tspan></text>			</g>
+		</g>
+		<g id="group19-116" transform="translate(580.64,-867.88)">
+			<title>Entidad.30</title>
+			<g id="shape20-117" transform="translate(0,-92.0039)">
+				<title>Hoja.20</title>
+				<desc>ORIGIN DESTINATION TUPLES</desc>
+				<rect x="0" y="1028.82" width="130.508" height="20.0036" class="st6"/>
+				<text x="5.13" y="1041.82" class="st7">ORIGIN DESTINATION TUPLES</text>			</g>
+			<g id="shape21-120">
+				<title>Hoja.21</title>
+				<desc>PK ID FK2 TEST_ID FK1 SERVICE_ID ORIGIN DESTINATION SEATS</desc>
+				<path d="M0 1048.82 L130.51 1048.82 L130.51 956.82 L0 956.82 L0 1048.82 Z" class="st8"/>
+				<path d="M0 1048.82 L130.51 1048.82 L130.51 956.82 L0 956.82 L0 1048.82" class="st4"/>
+				<path d="M26.33 1048.82 L26.33 956.82" class="st4"/>
+				<path d="M0 976.53 L130.51 976.53" class="st4"/>
+				<text x="4" y="969.82" class="st7">PK <tspan dx="1.597em" class="st10">ID  </tspan><tspan x="4" dy="2.4em"
+							class="st12">FK2 </tspan><tspan dx="1.148em" class="st12">TEST_ID </tspan><tspan x="4" dy="1.2em"
+							class="st12">FK1 </tspan><tspan dx="1.148em" class="st12">SERVICE_ID </tspan><tspan x="4" dy="1.2em"
+							class="st12"> </tspan><tspan dx="2.407em" class="st12">ORIGIN </tspan><tspan x="4" dy="1.2em"
+							class="st12"> </tspan><tspan dx="2.407em" class="st12">DESTINATION </tspan><tspan x="4" dy="1.2em"
+							class="st12"> </tspan><tspan dx="2.407em" class="st12">SEATS</tspan></text>			</g>
+		</g>
+		<g id="group22-137" transform="translate(461.652,-852.296)">
+			<title>Entidad.33</title>
+			<g id="shape23-138" transform="translate(0,-68.0038)">
+				<title>Hoja.23</title>
+				<desc>SEATS_PRICE</desc>
+				<rect x="0" y="1028.82" width="67.8969" height="20.0036" class="st6"/>
+				<text x="7.43" y="1041.82" class="st7">SEATS_PRICE</text>			</g>
+			<g id="shape24-141">
+				<title>Hoja.24</title>
+				<desc>PK ID FK1 ODT_ID SEAT PRICE</desc>
+				<path d="M0 1048.82 L67.9 1048.82 L67.9 980.82 L0 980.82 L0 1048.82 Z" class="st8"/>
+				<path d="M0 1048.82 L67.9 1048.82 L67.9 980.82 L0 980.82 L0 1048.82" class="st4"/>
+				<path d="M26.33 1048.82 L26.33 980.82" class="st4"/>
+				<path d="M0 1001.22 L67.9 1001.22" class="st4"/>
+				<text x="4" y="993.82" class="st9">PK <tspan dx="1.554em" class="st10">ID  </tspan><tspan x="4" dy="2.4em"
+							class="st11">FK1 </tspan><tspan dx="1.148em" class="st11">ODT_ID </tspan><tspan x="4" dy="1.2em"
+							class="st11"> </tspan><tspan dx="2.407em" class="st11">SEAT </tspan><tspan x="4" dy="1.2em"
+							class="st11"> </tspan><tspan dx="2.407em" class="st11">PRICE</tspan></text>			</g>
+		</g>
+		<g id="group25-154" transform="translate(313.868,-853.017)">
+			<title>Entidad.38</title>
+			<g id="shape26-155" transform="translate(0,-80.0038)">
+				<title>Hoja.26</title>
+				<desc>SEAT</desc>
+				<rect x="0" y="1028.82" width="80.0011" height="20.0036" class="st6"/>
+				<text x="29.93" y="1041.82" class="st7">SEAT</text>			</g>
+			<g id="shape27-158">
+				<title>Hoja.27</title>
+				<desc>PK ID ID_ON_FILE NAME HARD TYPE SOFT TYPE</desc>
+				<path d="M0 1048.82 L80 1048.82 L80 968.82 L0 968.82 L0 1048.82 Z" class="st8"/>
+				<path d="M0 1048.82 L80 1048.82 L80 968.82 L0 968.82 L0 1048.82" class="st4"/>
+				<path d="M21.83 1048.82 L21.83 968.82" class="st4"/>
+				<path d="M0 988.82 L80 988.82" class="st4"/>
+				<text x="4" y="981.82" class="st9">PK <tspan dx="1.104em" class="st10">ID  </tspan><tspan x="4" dy="2.4em"
+							class="st11"> </tspan><tspan dx="1.957em" class="st11">ID_ON_FILE </tspan><tspan x="4" dy="1.2em"
+							class="st11"> </tspan><tspan dx="1.957em" class="st11">NAME </tspan><tspan x="4" dy="1.2em"
+							class="st11"> </tspan><tspan dx="1.957em" class="st11">HARD TYPE </tspan><tspan x="4" dy="1.2em"
+							class="st11"> </tspan><tspan dx="1.957em" class="st11">SOFT TYPE</tspan></text>			</g>
+		</g>
+		<g id="group28-173" transform="translate(299.118,-53.0357)">
+			<title>Entidad.42</title>
+			<g id="shape29-174" transform="translate(0,-44.0037)">
+				<title>Hoja.29</title>
+				<desc>CORRIDOR</desc>
+				<rect x="0" y="1028.82" width="57.7651" height="20.0036" class="st6"/>
+				<text x="7.12" y="1041.82" class="st7">CORRIDOR</text>			</g>
+			<g id="shape30-177">
+				<title>Hoja.30</title>
+				<desc>PK ID NAME</desc>
+				<path d="M0 1048.82 L57.77 1048.82 L57.77 1004.82 L0 1004.82 L0 1048.82 Z" class="st8"/>
+				<path d="M0 1048.82 L57.77 1048.82 L57.77 1004.82 L0 1004.82 L0 1048.82" class="st4"/>
+				<path d="M21.83 1048.82 L21.83 1004.82" class="st4"/>
+				<path d="M0 1026.82 L57.77 1026.82" class="st4"/>
+				<text x="4" y="1017.82" class="st9">PK <tspan dx="1.104em" class="st10">ID  </tspan><tspan x="4" dy="2.4em"
+							class="st11"> </tspan><tspan dx="1.957em" class="st11">NAME</tspan></text>			</g>
+		</g>
+		<g id="group31-186" transform="translate(283.029,-258.325)">
+			<title>Entidad.46</title>
+			<g id="shape32-187" transform="translate(0,-80.0038)">
+				<title>Hoja.32</title>
+				<desc>STATIONS</desc>
+				<rect x="0" y="1028.82" width="118.449" height="20.0036" class="st6"/>
+				<text x="39.07" y="1041.82" class="st7">STATIONS</text>			</g>
+			<g id="shape33-190">
+				<title>Hoja.33</title>
+				<desc>PK ID NAME CITY SHORT NAME COORDINATES : [List]</desc>
+				<path d="M0 1048.82 L118.45 1048.82 L118.45 968.82 L0 968.82 L0 1048.82 Z" class="st8"/>
+				<path d="M0 1048.82 L118.45 1048.82 L118.45 968.82 L0 968.82 L0 1048.82" class="st4"/>
+				<path d="M21.83 1048.82 L21.83 968.82" class="st4"/>
+				<path d="M0 988.82 L118.45 988.82" class="st4"/>
+				<text x="4" y="981.82" class="st9">PK <tspan dx="1.104em" class="st10">ID  </tspan><tspan x="4" dy="2.4em"
+							class="st11"> </tspan><tspan dx="1.957em" class="st11">NAME </tspan><tspan x="4" dy="1.2em"
+							class="st11"> </tspan><tspan dx="1.957em" class="st11">CITY </tspan><tspan x="4" dy="1.2em"
+							class="st11"> </tspan><tspan dx="1.957em" class="st11">SHORT NAME </tspan><tspan x="4" dy="1.2em"
+							class="st11"> </tspan><tspan dx="1.957em" class="st11">COORDINATES : [List]</tspan></text>			</g>
+		</g>
+		<g id="group34-205" transform="translate(477.026,-330.675)">
+			<title>Entidad.63</title>
+			<g id="shape35-206" transform="translate(0,-92.0039)">
+				<title>Hoja.35</title>
+				<desc>STOPS</desc>
+				<rect x="0" y="1028.82" width="108.703" height="20.0036" class="st6"/>
+				<text x="41.43" y="1041.82" class="st7">STOPS</text>			</g>
+			<g id="shape36-209">
+				<title>Hoja.36</title>
+				<desc>PK ID FK3 TEST_ID FK2 LINE_ID FK1 STATION ARRIVAL TIME DEPART...</desc>
+				<path d="M0 1048.82 L108.7 1048.82 L108.7 956.82 L0 956.82 L0 1048.82 Z" class="st8"/>
+				<path d="M0 1048.82 L108.7 1048.82 L108.7 956.82 L0 956.82 L0 1048.82" class="st4"/>
+				<path d="M26.33 1048.82 L26.33 956.82" class="st4"/>
+				<path d="M0 976.53 L108.7 976.53" class="st4"/>
+				<text x="4" y="969.82" class="st9">PK <tspan dx="1.554em" class="st10">ID  </tspan><tspan x="4" dy="2.4em"
+							class="st11">FK3 </tspan><tspan dx="1.148em" class="st11">TEST_ID </tspan><tspan x="4" dy="1.2em"
+							class="st11">FK2 </tspan><tspan dx="1.148em" class="st11">LINE_ID </tspan><tspan x="4" dy="1.2em"
+							class="st11">FK1 </tspan><tspan dx="1.148em" class="st11">STATION </tspan><tspan x="4" dy="1.2em"
+							class="st11"> </tspan><tspan dx="2.407em" class="st11">ARRIVAL TIME </tspan><tspan x="4" dy="1.2em"
+							class="st11"> </tspan><tspan dx="2.407em" class="st11">DEPARTURE TIME</tspan></text>			</g>
+		</g>
+		<g id="group51-226" transform="translate(122.703,-127.904)">
+			<title>Entidad.51</title>
+			<g id="shape52-227" transform="translate(0,-68.0038)">
+				<title>Hoja.52</title>
+				<desc>CORRIDOR_STATIONS</desc>
+				<rect x="0" y="1028.82" width="104.005" height="20.0036" class="st6"/>
+				<text x="7.59" y="1041.82" class="st7">CORRIDOR_STATIONS</text>			</g>
+			<g id="shape53-230">
+				<title>Hoja.53</title>
+				<desc>PK ID FK2 TEST_ID FK1 CORRIDOR STATIONS : [List]</desc>
+				<path d="M0 1048.82 L104.01 1048.82 L104.01 980.82 L0 980.82 L0 1048.82 Z" class="st8"/>
+				<path d="M0 1048.82 L104.01 1048.82 L104.01 980.82 L0 980.82 L0 1048.82" class="st4"/>
+				<path d="M26.33 1048.82 L26.33 980.82" class="st4"/>
+				<path d="M0 1001.22 L104.01 1001.22" class="st4"/>
+				<text x="4" y="993.82" class="st9">PK <tspan dx="1.554em" class="st10">ID  </tspan><tspan x="4" dy="2.4em"
+							class="st11">FK2 </tspan><tspan dx="1.148em" class="st11">TEST_ID </tspan><tspan x="4" dy="1.2em"
+							class="st11">FK1 </tspan><tspan dx="1.148em" class="st11">CORRIDOR </tspan><tspan x="4" dy="1.2em"
+							class="st11"> </tspan><tspan dx="2.407em" class="st11">STATIONS : [List]</tspan></text>			</g>
+		</g>
+		<g id="group55-243" transform="translate(41.8748,-905.258)">
+			<title>Entidad.55</title>
+			<g id="shape56-244" transform="translate(0,-56.0037)">
+				<title>Hoja.56</title>
+				<desc>TESTS</desc>
+				<rect x="0" y="1028.82" width="95.5828" height="20.0036" class="st6"/>
+				<text x="35.88" y="1041.82" class="st7">TESTS</text>			</g>
+			<g id="shape57-247">
+				<title>Hoja.57</title>
+				<desc>PK ID NAME OBSERVATIONS</desc>
+				<path d="M0 1048.82 L95.58 1048.82 L95.58 992.82 L0 992.82 L0 1048.82 Z" class="st8"/>
+				<path d="M0 1048.82 L95.58 1048.82 L95.58 992.82 L0 992.82 L0 1048.82" class="st4"/>
+				<path d="M21.83 1048.82 L21.83 992.82" class="st4"/>
+				<path d="M0 1013.82 L95.58 1013.82" class="st4"/>
+				<text x="4" y="1005.82" class="st9">PK <tspan dx="1.104em" class="st10">ID  </tspan><tspan x="4" dy="2.4em"
+							class="st11"> </tspan><tspan dx="1.957em" class="st11">NAME </tspan><tspan x="4" dy="1.2em"
+							class="st11"> </tspan><tspan dx="1.957em" class="st11">OBSERVATIONS</tspan></text>			</g>
+		</g>
+		<g id="group59-258" transform="translate(670.769,-368.848)">
+			<title>Entidad.59</title>
+			<g id="shape60-259" transform="translate(0,-68.0038)">
+				<title>Hoja.60</title>
+				<desc>RESTRICTIONS</desc>
+				<rect x="0" y="1028.82" width="90.1283" height="20.0036" class="st6"/>
+				<text x="16" y="1041.82" class="st7">RESTRICTIONS</text>			</g>
+			<g id="shape61-262">
+				<title>Hoja.61</title>
+				<desc>PK ID FK1 SERVICE_ID TYPE RESTRICTION</desc>
+				<path d="M0 1048.82 L90.13 1048.82 L90.13 980.82 L0 980.82 L0 1048.82 Z" class="st8"/>
+				<path d="M0 1048.82 L90.13 1048.82 L90.13 980.82 L0 980.82 L0 1048.82" class="st4"/>
+				<path d="M26.33 1048.82 L26.33 980.82" class="st4"/>
+				<path d="M0 1001.22 L90.13 1001.22" class="st4"/>
+				<text x="4" y="993.82" class="st9">PK <tspan dx="1.554em" class="st10">ID  </tspan><tspan x="4" dy="2.4em"
+							class="st11">FK1 </tspan><tspan dx="1.148em" class="st11">SERVICE_ID </tspan><tspan x="4" dy="1.2em"
+							class="st11"> </tspan><tspan dx="2.407em" class="st11">TYPE </tspan><tspan x="4" dy="1.2em"
+							class="st11"> </tspan><tspan dx="2.407em" class="st11">RESTRICTION</tspan></text>			</g>
+		</g>
+		<g id="group62-275" transform="translate(191.116,-865.017)">
+			<title>Entidad.62</title>
+			<g id="shape63-276" transform="translate(0,-56.0037)">
+				<title>Hoja.63</title>
+				<desc>AUX_SEAT</desc>
+				<rect x="0" y="1028.82" width="70.3873" height="20.0036" class="st6"/>
+				<text x="13.94" y="1041.82" class="st7">AUX_SEAT</text>			</g>
+			<g id="shape64-279">
+				<title>Hoja.64</title>
+				<desc>PK ID FK2 SEAT_ID FK1 TEST_ID</desc>
+				<path d="M0 1048.82 L70.39 1048.82 L70.39 992.82 L0 992.82 L0 1048.82 Z" class="st8"/>
+				<path d="M0 1048.82 L70.39 1048.82 L70.39 992.82 L0 992.82 L0 1048.82" class="st4"/>
+				<path d="M26.33 1048.82 L26.33 992.82" class="st4"/>
+				<path d="M0 1013.82 L70.39 1013.82" class="st4"/>
+				<text x="4" y="1005.82" class="st9">PK <tspan dx="1.554em" class="st10">ID  </tspan><tspan x="4" dy="2.4em"
+							class="st11">FK2 </tspan><tspan dx="1.148em" class="st11">SEAT_ID </tspan><tspan x="4" dy="1.2em"
+							class="st11">FK1 </tspan><tspan dx="1.148em" class="st11">TEST_ID</tspan></text>			</g>
+		</g>
+		<g id="group65-290" transform="translate(170.595,-659.797)">
+			<title>Entidad.65</title>
+			<g id="shape66-291" transform="translate(0,-56.0037)">
+				<title>Hoja.66</title>
+				<desc>AUX_ROLLING_STOCK</desc>
+				<rect x="0" y="1028.82" width="117.589" height="20.0036" class="st6"/>
+				<text x="13.94" y="1041.82" class="st7">AUX_ROLLING_STOCK</text>			</g>
+			<g id="shape67-294">
+				<title>Hoja.67</title>
+				<desc>PK ID FK2 ROLLING_STOCK_ID FK1 TEST_ID</desc>
+				<path d="M0 1048.82 L117.59 1048.82 L117.59 992.82 L0 992.82 L0 1048.82 Z" class="st8"/>
+				<path d="M0 1048.82 L117.59 1048.82 L117.59 992.82 L0 992.82 L0 1048.82" class="st4"/>
+				<path d="M26.33 1048.82 L26.33 992.82" class="st4"/>
+				<path d="M0 1013.82 L117.59 1013.82" class="st4"/>
+				<text x="4" y="1005.82" class="st9">PK <tspan dx="1.554em" class="st10">ID  </tspan><tspan x="4" dy="2.4em"
+							class="st11">FK2 </tspan><tspan dx="1.148em" class="st11">ROLLING_STOCK_ID </tspan><tspan x="4"
+							dy="1.2em" class="st11">FK1 </tspan><tspan dx="1.148em" class="st11">TEST_ID</tspan></text>			</g>
+		</g>
+		<g id="group68-305" transform="translate(177.569,-763.526)">
+			<title>Entidad.68</title>
+			<g id="shape69-306" transform="translate(0,-56.0037)">
+				<title>Hoja.69</title>
+				<desc>AUX_TIME_SLOT</desc>
+				<rect x="0" y="1028.82" width="96.3491" height="20.0036" class="st6"/>
+				<text x="13.94" y="1041.82" class="st7">AUX_TIME_SLOT</text>			</g>
+			<g id="shape70-309">
+				<title>Hoja.70</title>
+				<desc>PK ID FK2 TIME_SLOT_ID FK1 TEST_ID</desc>
+				<path d="M0 1048.82 L96.35 1048.82 L96.35 992.82 L0 992.82 L0 1048.82 Z" class="st8"/>
+				<path d="M0 1048.82 L96.35 1048.82 L96.35 992.82 L0 992.82 L0 1048.82" class="st4"/>
+				<path d="M26.33 1048.82 L26.33 992.82" class="st4"/>
+				<path d="M0 1013.82 L96.35 1013.82" class="st4"/>
+				<text x="4" y="1005.82" class="st9">PK <tspan dx="1.554em" class="st10">ID  </tspan><tspan x="4" dy="2.4em"
+							class="st11">FK2 </tspan><tspan dx="1.148em" class="st11">TIME_SLOT_ID </tspan><tspan x="4" dy="1.2em"
+							class="st11">FK1 </tspan><tspan dx="1.148em" class="st11">TEST_ID</tspan></text>			</g>
+		</g>
+		<g id="group71-320" transform="translate(123.921,-475.545)">
+			<title>Entidad.71</title>
+			<g id="shape72-321" transform="translate(0,-56.0037)">
+				<title>Hoja.72</title>
+				<desc>AUX_TRAIN_SERVICE_PROVIDER</desc>
+				<rect x="0" y="1028.82" width="160.465" height="20.0036" class="st6"/>
+				<text x="13.94" y="1041.82" class="st7">AUX_TRAIN_SERVICE_PROVIDER</text>			</g>
+			<g id="shape73-324">
+				<title>Hoja.73</title>
+				<desc>PK ID FK2 TRAIN_SERVICE_PROVIDER_ID FK1 TEST_ID</desc>
+				<path d="M0 1048.82 L160.47 1048.82 L160.47 992.82 L0 992.82 L0 1048.82 Z" class="st8"/>
+				<path d="M0 1048.82 L160.47 1048.82 L160.47 992.82 L0 992.82 L0 1048.82" class="st4"/>
+				<path d="M26.33 1048.82 L26.33 992.82" class="st4"/>
+				<path d="M0 1013.82 L160.47 1013.82" class="st4"/>
+				<text x="4" y="1005.82" class="st9">PK <tspan dx="1.554em" class="st10">ID  </tspan><tspan x="4" dy="2.4em"
+							class="st11">FK2 </tspan><tspan dx="1.148em" class="st11">TRAIN_SERVICE_PROVIDER_ID </tspan><tspan
+							x="4" dy="1.2em" class="st11">FK1 </tspan><tspan dx="1.148em" class="st11">TEST_ID</tspan></text>			</g>
+		</g>
+		<g id="group74-335" transform="translate(126.331,-270.325)">
+			<title>Entidad.74</title>
+			<g id="shape75-336" transform="translate(0,-56.0037)">
+				<title>Hoja.75</title>
+				<desc>AUX_STATIONS</desc>
+				<rect x="0" y="1028.82" width="90.5678" height="20.0036" class="st6"/>
+				<text x="13.94" y="1041.82" class="st7">AUX_STATIONS</text>			</g>
+			<g id="shape76-339">
+				<title>Hoja.76</title>
+				<desc>PK ID FK2 STATIONS_ID FK1 TEST_ID</desc>
+				<path d="M0 1048.82 L90.57 1048.82 L90.57 992.82 L0 992.82 L0 1048.82 Z" class="st8"/>
+				<path d="M0 1048.82 L90.57 1048.82 L90.57 992.82 L0 992.82 L0 1048.82" class="st4"/>
+				<path d="M26.33 1048.82 L26.33 992.82" class="st4"/>
+				<path d="M0 1013.82 L90.57 1013.82" class="st4"/>
+				<text x="4" y="1005.82" class="st9">PK <tspan dx="1.554em" class="st10">ID  </tspan><tspan x="4" dy="2.4em"
+							class="st11">FK2 </tspan><tspan dx="1.148em" class="st11">STATIONS_ID </tspan><tspan x="4" dy="1.2em"
+							class="st11">FK1 </tspan><tspan dx="1.148em" class="st11">TEST_ID</tspan></text>			</g>
+		</g>
+		<g id="group77-350" transform="translate(123.44,-39.207)">
+			<title>Entidad.77</title>
+			<g id="shape78-351" transform="translate(0,-56.0037)">
+				<title>Hoja.78</title>
+				<desc>AUX_CORRIDOR</desc>
+				<rect x="0" y="1028.82" width="93.7857" height="20.0036" class="st6"/>
+				<text x="13.94" y="1041.82" class="st7">AUX_CORRIDOR</text>			</g>
+			<g id="shape79-354">
+				<title>Hoja.79</title>
+				<desc>PK ID FK2 CORRIDOR_ID FK1 TEST_ID</desc>
+				<path d="M0 1048.82 L93.79 1048.82 L93.79 992.82 L0 992.82 L0 1048.82 Z" class="st8"/>
+				<path d="M0 1048.82 L93.79 1048.82 L93.79 992.82 L0 992.82 L0 1048.82" class="st4"/>
+				<path d="M26.33 1048.82 L26.33 992.82" class="st4"/>
+				<path d="M0 1013.82 L93.79 1013.82" class="st4"/>
+				<text x="4" y="1005.82" class="st9">PK <tspan dx="1.554em" class="st10">ID  </tspan><tspan x="4" dy="2.4em"
+							class="st11">FK2 </tspan><tspan dx="1.148em" class="st11">CORRIDOR_ID </tspan><tspan x="4" dy="1.2em"
+							class="st11">FK1 </tspan><tspan dx="1.148em" class="st11">TEST_ID</tspan></text>			</g>
+		</g>
+		<g id="group80-365" transform="translate(174.706,-565.101)">
+			<title>Entidad.80</title>
+			<g id="shape81-366" transform="translate(0,-56.0037)">
+				<title>Hoja.81</title>
+				<desc>AUX_SERVICE</desc>
+				<rect x="0" y="1028.82" width="83.5659" height="20.0036" class="st6"/>
+				<text x="13.94" y="1041.82" class="st7">AUX_SERVICE</text>			</g>
+			<g id="shape82-369">
+				<title>Hoja.82</title>
+				<desc>PK ID FK2 SERVICE_ID FK1 TEST_ID</desc>
+				<path d="M0 1048.82 L83.57 1048.82 L83.57 992.82 L0 992.82 L0 1048.82 Z" class="st8"/>
+				<path d="M0 1048.82 L83.57 1048.82 L83.57 992.82 L0 992.82 L0 1048.82" class="st4"/>
+				<path d="M26.33 1048.82 L26.33 992.82" class="st4"/>
+				<path d="M0 1013.82 L83.57 1013.82" class="st4"/>
+				<text x="4" y="1005.82" class="st9">PK <tspan dx="1.554em" class="st10">ID  </tspan><tspan x="4" dy="2.4em"
+							class="st11">FK2 </tspan><tspan dx="1.148em" class="st11">SERVICE_ID </tspan><tspan x="4" dy="1.2em"
+							class="st11">FK1 </tspan><tspan dx="1.148em" class="st11">TEST_ID</tspan></text>			</g>
+		</g>
+		<g id="shape83-380" transform="translate(692.028,-669.454)">
+			<title>Relación</title>
+			<path d="M7.09 1033.7 L7.09 1033.34 L7.09 865.87" class="st13"/>
+		</g>
+		<g id="shape84-389" transform="translate(706.202,-557.447)">
+			<title>Relación.84</title>
+			<path d="M7.09 1063.94 L7.09 1064.3 L7.09 1133.93" class="st13"/>
+		</g>
+		<g id="shape85-396" transform="translate(580.64,-897.005)">
+			<title>Relación.85</title>
+			<path d="M-15.12 1041.73 L-15.48 1041.73 L-35.61 1041.73" class="st13"/>
+		</g>
+		<g id="shape87-403" transform="translate(98.1701,-905.258)">
+			<title>Relación.87</title>
+			<path d="M0 1063.94 L0 1064.3 L0 1350.97 L61.06 1350.97" class="st13"/>
+		</g>
+		<g id="shape88-410" transform="translate(137.458,-916.055)">
+			<title>Relación.88</title>
+			<path d="M15.12 1041.73 L15.48 1041.73 L38.18 1041.73" class="st13"/>
+		</g>
+		<g id="shape89-417" transform="translate(110.926,-905.258)">
+			<title>Relación.89</title>
+			<path d="M0 1063.94 L0 1064.3 L0 1256.28 L44.19 1256.28" class="st13"/>
+		</g>
+		<g id="shape90-424" transform="translate(122.429,-905.258)">
+			<title>Relación.90</title>
+			<path d="M0 1063.94 L0 1064.3 L0 1152.55 L39.66 1152.55" class="st13"/>
+		</g>
+		<g id="shape91-431" transform="translate(88.9272,-905.258)">
+			<title>Relación.91</title>
+			<path d="M0 1063.94 L0 1064.3 L0 1440.53 L19.51 1440.53" class="st13"/>
+		</g>
+		<g id="shape92-438" transform="translate(68.7197,-905.258)">
+			<title>Relación.92</title>
+			<path d="M0 1063.94 L0 1064.3 L0 1645.75 L42.13 1645.75" class="st13"/>
+		</g>
+		<g id="shape93-445" transform="translate(48.2804,-905.258)">
+			<title>Relación.93</title>
+			<path d="M0 1063.94 L0 1064.3 L0 1876.87 L59.68 1876.87" class="st13"/>
+		</g>
+		<g id="shape94-452" transform="translate(401.477,-337.417)">
+			<title>Relación.94</title>
+			<path d="M15.12 1041.73 L15.48 1041.73 L60.07 1041.73" class="st13"/>
+		</g>
+		<g id="shape95-459" transform="translate(536.123,-115.214)">
+			<title>Relación.95</title>
+			<path d="M7.09 1033.7 L7.09 1033.34 L7.09 848.84" class="st13"/>
+		</g>
+		<g id="shape97-466" transform="translate(328.001,-117.043)">
+			<title>Relación.97</title>
+			<path d="M0 1033.7 L0 1033.34 L0 993.95 L-85.81 993.95" class="st13"/>
+		</g>
+		<g id="shape98-473" transform="translate(608.995,-598.621)">
+			<title>Relación.98</title>
+			<path d="M-15.12 1042.07 L-15.48 1042.07 L-168.28 1042.07 L-168.28 1041.39 L-335.24 1041.39" class="st13"/>
+		</g>
+		<g id="shape99-480" transform="translate(313.868,-895.934)">
+			<title>Relación.99</title>
+			<path d="M-15.12 1041.73 L-15.48 1041.73 L-36.88 1041.73" class="st13"/>
+		</g>
+		<g id="shape100-487" transform="translate(328.145,-690.714)">
+			<title>Relación.100</title>
+			<path d="M-15.12 1041.73 L-15.48 1041.73 L-24.48 1041.73" class="st13"/>
+		</g>
+		<g id="shape101-494" transform="translate(329.656,-792.185)">
+			<title>Relación.101</title>
+			<path d="M-15.12 1041.73 L-15.48 1041.73 L-40.26 1041.73" class="st13"/>
+		</g>
+		<g id="shape103-501" transform="translate(358.958,-506.462)">
+			<title>Relación.103</title>
+			<path d="M-15.12 1041.73 L-15.48 1041.73 L-59.09 1041.73" class="st13"/>
+		</g>
+		<g id="shape104-508" transform="translate(283.029,-301.242)">
+			<title>Relación.104</title>
+			<path d="M-15.12 1041.73 L-15.48 1041.73 L-50.65 1041.73" class="st13"/>
+		</g>
+		<g id="shape105-515" transform="translate(299.118,-77.0384)">
+			<title>Relación.105</title>
+			<path d="M-15.12 1041.73 L-15.48 1041.73 L-66.41 1041.73" class="st13"/>
+		</g>
+		<g id="shape106-522" transform="translate(408.147,-703.392)">
+			<title>Relación.106</title>
+			<path d="M15.12 1048.82 L15.48 1048.82 L234.28 1048.82 L234.28 1067.28" class="st13"/>
+		</g>
+		<g id="shape107-529" transform="translate(387.304,-797.013)">
+			<title>Relación.107</title>
+			<path d="M15.12 1048.82 L15.48 1048.82 L283.46 1048.82 L283.46 1160.9" class="st13"/>
+		</g>
+		<g id="shape108-536" transform="translate(462.386,-553.037)">
+			<title>Relación.108</title>
+			<path d="M0 1033.7 L0 1033.34 L0 1033.22 L131.13 1033.22" class="st13"/>
+		</g>
+		<g id="shape109-543" transform="translate(583.276,-77.2107)">
+			<title>Relación.109</title>
+			<path d="M15.12 1048.82 L15.48 1048.82 L56.61 1048.82 L56.61 584.06" class="st13"/>
+		</g>
+		<g id="shape110-550" transform="translate(79.0565,-905.258)">
+			<title>Relación.110</title>
+			<path d="M0 1063.94 L0 1064.3 L0 1553.57 L382.49 1553.57" class="st13"/>
+		</g>
+		<g id="shape111-557" transform="translate(58.4851,-905.258)">
+			<title>Relación.111</title>
+			<path d="M0 1063.94 L0 1064.3 L0 1782.17 L48.74 1782.17" class="st13"/>
+		</g>
+		<g id="shape112-564" transform="translate(137.458,-959.369)">
+			<title>Relación.112</title>
+			<path d="M15.12 1041.73 L15.48 1041.73 L427.7 1041.73" class="st13"/>
+		</g>
+		<g id="shape113-571" transform="translate(356.883,-77.0384)">
+			<title>Relación.113</title>
+			<path d="M15.12 1041.73 L15.48 1041.73 L130.78 1041.73" class="st13"/>
+		</g>
+	</g>
+</svg>

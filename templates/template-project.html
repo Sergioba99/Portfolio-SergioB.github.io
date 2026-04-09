@@ -150,11 +150,30 @@
   </div>
 </footer>
 
+<div class="image-lightbox" id="image-lightbox" aria-hidden="true">
+  <div class="image-lightbox-panel" role="dialog" aria-modal="true" aria-label="Visor de imágenes">
+    <button type="button" aria-label="Cerrar visor" onclick="closeLightbox()">✕</button>
+    <div class="lightbox-toolbar">
+      <span class="lightbox-counter" id="lightbox-counter">1 / 1</span>
+      <div class="lightbox-nav">
+        <button type="button" aria-label="Imagen anterior" onclick="changeLightboxSlide(-1)">&#8249;</button>
+        <button type="button" aria-label="Imagen siguiente" onclick="changeLightboxSlide(1)">&#8250;</button>
+      </div>
+    </div>
+    <div class="lightbox-frame">
+      <img id="lightbox-image" src="" alt="Imagen ampliada del proyecto">
+    </div>
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+</div>
+
 <script>
 /* ── CARRUSEL ──
    No necesitas tocar este código.
    Solo asegúrate de que el id del div.carousel y los onclick de los botones
    usan el mismo ID único que pusiste arriba (carousel-[ID-UNICO]). */
+let lightboxState = { carouselId: null, index: 0 };
+
 function initCarousel(id) {
   const carousel = document.getElementById(id);
   if (!carousel) return;
@@ -167,11 +186,16 @@ function initCarousel(id) {
     return;
   }
   const dotsContainer = document.getElementById('dots-' + id);
-  slides.forEach((_, i) => {
+  slides.forEach((slide, i) => {
     const dot = document.createElement('button');
     dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
     dot.onclick = () => goToSlide(id, i);
     dotsContainer.appendChild(dot);
+
+    const image = slide.querySelector('img');
+    if (image) {
+      image.addEventListener('click', () => openLightbox(id, i));
+    }
   });
   if (slides.length === 1) {
     carousel.querySelector('.prev').style.display = 'none';
@@ -200,14 +224,71 @@ function getCurrentIndex(id, total) {
 
 function goToSlide(id, index) {
   const carousel = document.getElementById(id);
-  const slides = carousel.querySelectorAll('.carousel-slide');
   const dots = carousel.querySelectorAll('.carousel-dot');
   carousel.querySelector('.carousel-track').style.transform = `translateX(-${index * 100}%)`;
   dots.forEach((d, i) => d.classList.toggle('active', i === index));
 }
 
+function getLightboxSlides(id) {
+  const carousel = document.getElementById(id);
+  return carousel ? Array.from(carousel.querySelectorAll('.carousel-slide')) : [];
+}
+
+function renderLightbox() {
+  const slides = getLightboxSlides(lightboxState.carouselId);
+  const currentSlide = slides[lightboxState.index];
+  if (!currentSlide) return;
+  const image = currentSlide.querySelector('img');
+  const caption = currentSlide.querySelector('.slide-caption');
+  const lightbox = document.getElementById('image-lightbox');
+  const img = document.getElementById('lightbox-image');
+  const counter = document.getElementById('lightbox-counter');
+  const captionBox = document.getElementById('lightbox-caption');
+  const prevBtn = lightbox.querySelector('.lightbox-nav button[aria-label="Imagen anterior"]');
+  const nextBtn = lightbox.querySelector('.lightbox-nav button[aria-label="Imagen siguiente"]');
+  img.src = image ? image.src : '';
+  img.alt = image?.alt || 'Imagen ampliada del proyecto';
+  counter.textContent = `${lightboxState.index + 1} / ${slides.length}`;
+  captionBox.textContent = caption ? caption.textContent.trim() : (image?.alt || '');
+  prevBtn.style.visibility = slides.length > 1 ? 'visible' : 'hidden';
+  nextBtn.style.visibility = slides.length > 1 ? 'visible' : 'hidden';
+  lightbox.classList.add('open');
+  lightbox.setAttribute('aria-hidden', 'false');
+}
+
+function openLightbox(carouselId, index) {
+  lightboxState = { carouselId, index };
+  renderLightbox();
+}
+
+function changeLightboxSlide(delta) {
+  const slides = getLightboxSlides(lightboxState.carouselId);
+  if (slides.length <= 1) return;
+  lightboxState.index = (lightboxState.index + delta + slides.length) % slides.length;
+  renderLightbox();
+}
+
+function closeLightbox() {
+  const lightbox = document.getElementById('image-lightbox');
+  const img = document.getElementById('lightbox-image');
+  lightbox.classList.remove('open');
+  lightbox.setAttribute('aria-hidden', 'true');
+  img.src = '';
+  document.getElementById('lightbox-caption').textContent = '';
+  lightboxState = { carouselId: null, index: 0 };
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.carousel').forEach(c => initCarousel(c.id));
+  document.getElementById('image-lightbox').addEventListener('click', (e) => {
+    if (e.target.id === 'image-lightbox') closeLightbox();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (!document.getElementById('image-lightbox').classList.contains('open')) return;
+    if (e.key === 'ArrowLeft') changeLightboxSlide(-1);
+    if (e.key === 'ArrowRight') changeLightboxSlide(1);
+    if (e.key === 'Escape') closeLightbox();
+  });
 });
 </script>
 

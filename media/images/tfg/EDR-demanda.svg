@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generado por Microsoft Visio, SVG Export EDR-demanda.svg Page-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		width="11.6929in" height="8.46457in" viewBox="0 0 841.89 609.449" xml:space="preserve" color-interpolation-filters="sRGB"
+		class="st15">
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st2 {stroke:#000000;stroke-dasharray:2.25,2.25;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st3 {fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st4 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st5 {fill:#000000;font-family:Calibri;font-size:1.99999em}
+		.st6 {fill:#cdcdcd;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st7 {fill:#000000;font-family:Calibri;font-size:0.833336em}
+		.st8 {fill:#ffffff}
+		.st9 {fill:#000000;font-family:Calibri;font-size:0.833336em;font-weight:bold}
+		.st10 {font-size:1em;text-decoration:underline}
+		.st11 {font-size:1em;font-weight:normal}
+		.st12 {marker-end:url(#mrkr29-67);marker-start:url(#mrkr30-65);stroke:#000000;stroke-dasharray:3.6,3.6;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.2}
+		.st13 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.23255813953489}
+		.st14 {font-size:1em}
+		.st15 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs id="Markers">
+		<g id="lend30">
+			<path
+					d="M 2.25 0.75 C 1.83579 0.75 1.5 0.414214 1.5 0 1.5 -0.414214 1.83579 -0.75 2.25 -0.75 2.66421 -0.75 3 -0.414214 3 0 3 0.414214 2.66421 0.75 2.25 0.75 Z M 0.75 -0.75 L 0.75 0.75 M 1.5 0 L 0 0 "
+					style="stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+		</g>
+		<marker id="mrkr30-65" class="st13" refX="12.6" orient="auto" markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend30" transform="scale(4.2999999999999) "/>
+		</marker>
+		<g id="lend29">
+			<path
+					d="M 2.25 0.75 C 1.83579 0.75 1.5 0.414214 1.5 0 1.5 -0.414214 1.83579 -0.75 2.25 -0.75 2.66421 -0.75 3 -0.414214 3 0 3 0.414214 2.66421 0.75 2.25 0.75 Z M 0 -0.75 L 1.5 0 L 0 0.75 M 1.5 0 L 0 0 "
+					style="stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+		</g>
+		<marker id="mrkr29-67" class="st13" refX="-12.9" orient="auto" markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend29" transform="scale(-4.2999999999999,-4.2999999999999) "/>
+		</marker>
+	</defs>
+	<g>
+		<title>FondoDeVisio-1</title>
+		<g id="group1-1" transform="translate(18,-18)">
+			<title>Registro</title>
+			<g id="shape2-2" transform="translate(556.749,1.13687E-13)">
+				<title>Hoja.2</title>
+				<rect x="0" y="584.8" width="238.785" height="24.6484" class="st1"/>
+			</g>
+			<g id="shape3-4" transform="translate(10.396,-563.613)">
+				<title>Hoja.3</title>
+				<path d="M0 609.45 L785.1 609.45" class="st2"/>
+			</g>
+			<g id="group5-7" transform="translate(0.474718,-553.691)">
+				<title>Hoja.5</title>
+				<g id="shape6-8" transform="translate(2.8345,-2.8345)">
+					<title>Hoja.6</title>
+					<ellipse cx="7.08676" cy="602.362" rx="7.08676" ry="7.08676" class="st3"/>
+				</g>
+				<g id="shape7-10" transform="translate(0,-9.92126)">
+					<title>Hoja.7</title>
+					<path d="M0 609.45 L19.84 609.45" class="st4"/>
+				</g>
+				<g id="shape8-13" transform="translate(619.37,589.606) rotate(90)">
+					<title>Hoja.8</title>
+					<path d="M0 609.45 L19.84 609.45" class="st4"/>
+				</g>
+			</g>
+			<g id="group9-16" transform="translate(785.573,-553.691)">
+				<title>Hoja.9</title>
+				<g id="shape10-17" transform="translate(2.8345,-2.8345)">
+					<title>Hoja.10</title>
+					<ellipse cx="7.08676" cy="602.362" rx="7.08676" ry="7.08676" class="st3"/>
+				</g>
+				<g id="shape11-19" transform="translate(0,-9.92126)">
+					<title>Hoja.11</title>
+					<path d="M0 609.45 L19.84 609.45" class="st4"/>
+				</g>
+				<g id="shape12-22" transform="translate(619.37,589.606) rotate(90)">
+					<title>Hoja.12</title>
+					<path d="M0 609.45 L19.84 609.45" class="st4"/>
+				</g>
+			</g>
+			<g id="shape13-25" transform="translate(10.3557,-535.469)">
+				<title>Hoja.13</title>
+				<path d="M0 581.31 L0 609.45 L785.18 609.45 L785.18 581.31" class="st2"/>
+			</g>
+			<g id="shape14-28" transform="translate(40.2945,-533.707)">
+				<title>Hoja.14</title>
+				<desc>Esquema de diseño relacional del archivo de demanda</desc>
+				<rect x="0" y="579.963" width="725.301" height="29.4857" class="st1"/>
+				<text x="97.86" y="601.91" class="st5">Esquema de diseño relacional del archivo de demanda</text>			</g>
+		</g>
+	</g>
+	<g>
+		<title>Página-1</title>
+		<g id="group30-31" transform="translate(486.425,-470.229)">
+			<title>Entidad</title>
+			<g id="shape31-32" transform="translate(0,-56.0037)">
+				<title>Hoja.31</title>
+				<desc>DAY</desc>
+				<rect x="0" y="589.445" width="117.023" height="20.0036" class="st6"/>
+				<text x="50.11" y="602.45" class="st7">DAY</text>			</g>
+			<g id="shape32-35">
+				<title>Hoja.32</title>
+				<desc>PK ID DATE FK1 DEMAND_PATTERN</desc>
+				<path d="M0 609.45 L117.02 609.45 L117.02 553.45 L0 553.45 L0 609.45 Z" class="st8"/>
+				<path d="M0 609.45 L117.02 609.45 L117.02 553.45 L0 553.45 L0 609.45" class="st4"/>
+				<path d="M26.33 609.45 L26.33 553.45" class="st4"/>
+				<path d="M0 574.45 L117.02 574.45" class="st4"/>
+				<text x="4" y="566.45" class="st9">PK <tspan dx="1.554em" class="st10">ID  </tspan><tspan x="4" dy="2.4em"
+							class="st11"> </tspan><tspan dx="2.407em" class="st11">DATE </tspan><tspan x="4" dy="1.2em"
+							class="st11">FK1 </tspan><tspan dx="1.148em" class="st11">DEMAND_PATTERN</tspan></text>			</g>
+		</g>
+		<g id="group33-46" transform="translate(724.545,-434.568)">
+			<title>Entidad.33</title>
+			<g id="shape34-47" transform="translate(0,-44.0037)">
+				<title>Hoja.34</title>
+				<desc>DEMAND_PATTERN</desc>
+				<rect x="0" y="589.445" width="90.6892" height="20.0036" class="st6"/>
+				<text x="5.13" y="602.45" class="st7">DEMAND_PATTERN</text>			</g>
+			<g id="shape35-50">
+				<title>Hoja.35</title>
+				<desc>PK ID NAME</desc>
+				<path d="M0 609.45 L90.69 609.45 L90.69 565.45 L0 565.45 L0 609.45 Z" class="st8"/>
+				<path d="M0 609.45 L90.69 609.45 L90.69 565.45 L0 565.45 L0 609.45" class="st4"/>
+				<path d="M21.83 609.45 L21.83 565.45" class="st4"/>
+				<path d="M0 587.45 L90.69 587.45" class="st4"/>
+				<text x="4" y="578.45" class="st9">PK <tspan dx="1.104em" class="st10">ID  </tspan><tspan x="4" dy="2.4em"
+							class="st11"> </tspan><tspan dx="1.957em" class="st11">NAME</tspan></text>			</g>
+		</g>
+		<g id="shape36-59" transform="translate(724.545,-477.315)">
+			<title>Relación</title>
+			<path d="M-15.12 602.36 L-15.48 602.36 L-105.62 602.36" class="st12"/>
+		</g>
+		<g id="group37-68" transform="translate(389.938,-45.032)">
+			<title>Entidad.37</title>
+			<g id="shape38-69" transform="translate(0,-188.004)">
+				<title>Hoja.38</title>
+				<desc>USER_PATTERN</desc>
+				<rect x="0" y="589.445" width="195.7" height="20.0036" class="st6"/>
+				<text x="65.97" y="602.45" class="st7">USER_PATTERN</text>			</g>
+			<g id="shape39-72">
+				<title>Hoja.39</title>
+				<desc>PK ID NAME RULES : [List] ARRIVAL_TIME ARRIVAL_TIME_KWARGS : ...</desc>
+				<path d="M0 609.45 L195.7 609.45 L195.7 421.44 L0 421.44 L0 609.45 Z" class="st8"/>
+				<path d="M0 609.45 L195.7 609.45 L195.7 421.44 L0 421.44 L0 609.45" class="st4"/>
+				<path d="M21.83 609.45 L21.83 421.44" class="st4"/>
+				<path d="M0 440.25 L195.7 440.25" class="st4"/>
+				<text x="4" y="434.44" class="st9">PK <tspan dx="1.104em" class="st10">ID  </tspan><tspan x="4" dy="2.4em"
+							class="st11"> </tspan><tspan dx="1.957em" class="st11">NAME </tspan><tspan x="4" dy="1.2em"
+							class="st11"> </tspan><tspan dx="1.957em" class="st11">RULES : [List] </tspan><tspan x="4" dy="1.2em"
+							class="st11"> </tspan><tspan dx="1.957em" class="st11">ARRIVAL_TIME </tspan><tspan x="4" dy="1.2em"
+							class="st11"> </tspan><tspan dx="1.957em" class="st11">ARRIVAL_TIME_KWARGS : [List] </tspan><tspan
+							x="4" dy="1.2em" class="st11"> </tspan><tspan dx="1.957em" class="st11">PURCHASE_DAY </tspan><tspan
+							x="4" dy="1.2em" class="st11"> </tspan><tspan dx="1.957em" class="st11">PURCHASE_DAY_KWARGS : [List] </tspan><tspan
+							x="4" dy="1.2em" class="st11"> </tspan><tspan dx="1.957em" class="st11">FORBIDDEN_DEPARTURE_HOURS : [List] </tspan><tspan
+							x="4" dy="1.2em" class="st11"> </tspan><tspan dx="1.957em" class="st11">SEATS : [List] </tspan><tspan
+							x="4" dy="1.2em" class="st11"> </tspan><tspan dx="1.957em" class="st11">TRAIN_SERVICE_PROVIDER : [List] </tspan><tspan
+							x="4" dy="1.2em" class="st11"> </tspan><tspan dx="1.957em" class="st11">EARLY_STOP </tspan><tspan x="4"
+							dy="1.2em" class="st11"> </tspan><tspan dx="1.957em" class="st11">UTILITY_THRESHOLD </tspan><tspan
+							x="4" dy="1.2em" class="st11"> </tspan><tspan dx="1.957em" class="st11">ERROR </tspan><tspan x="4"
+							dy="1.2em" class="st11"> </tspan><tspan dx="1.957em" class="st11">ERROR_KWARGS : [List]</tspan></text>			</g>
+		</g>
+		<g id="group40-105" transform="translate(330.52,-306.839)">
+			<title>Entidad.40</title>
+			<g id="shape41-106" transform="translate(0,-80.0038)">
+				<title>Hoja.41</title>
+				<desc>MARKET</desc>
+				<rect x="0" y="589.445" width="188.634" height="20.0036" class="st6"/>
+				<text x="76.96" y="602.45" class="st7">MARKET</text>			</g>
+			<g id="shape42-109">
+				<title>Hoja.42</title>
+				<desc>PK ID DEPARTURE_STATION DEPARTURE_STATION_COORDS : [List] ARR...</desc>
+				<path d="M0 609.45 L188.63 609.45 L188.63 529.44 L0 529.44 L0 609.45 Z" class="st8"/>
+				<path d="M0 609.45 L188.63 609.45 L188.63 529.44 L0 529.44 L0 609.45" class="st4"/>
+				<path d="M21.83 609.45 L21.83 529.44" class="st4"/>
+				<path d="M0 549.45 L188.63 549.45" class="st4"/>
+				<text x="4" y="542.45" class="st9">PK <tspan dx="1.104em" class="st10">ID  </tspan><tspan x="4" dy="2.4em"
+							class="st11"> </tspan><tspan dx="1.957em" class="st11">DEPARTURE_STATION </tspan><tspan x="4"
+							dy="1.2em" class="st11"> </tspan><tspan dx="1.957em" class="st11">DEPARTURE_STATION_COORDS : [List] </tspan><tspan
+							x="4" dy="1.2em" class="st11"> </tspan><tspan dx="1.957em" class="st11">ARRIVAL_STATION </tspan><tspan
+							x="4" dy="1.2em" class="st11"> </tspan><tspan dx="1.957em" class="st11">ARRIVAL_STATION_COORDS : [List]</tspan></text>			</g>
+		</g>
+		<g id="group43-124" transform="translate(698.389,-48.5835)">
+			<title>Entidad.43</title>
+			<g id="shape44-125" transform="translate(0,-104.004)">
+				<title>Hoja.44</title>
+				<desc>VARIABLE</desc>
+				<rect x="0" y="589.445" width="114.02" height="20.0036" class="st6"/>
+				<text x="37.15" y="602.45" class="st7">VARIABLE</text>			</g>
+			<g id="shape45-128">
+				<title>Hoja.45</title>
+				<desc>FK1 USER_PATTERN_ID NAME TYPE SUPPORT : [List] SETS : [List] ...</desc>
+				<path d="M0 609.45 L114.02 609.45 L114.02 505.44 L0 505.44 L0 609.45 Z" class="st8"/>
+				<path d="M0 609.45 L114.02 609.45 L114.02 505.44 L0 505.44 L0 609.45" class="st4"/>
+				<path d="M26.33 609.45 L26.33 505.44" class="st4"/>
+				<path d="M0 524.95 L114.02 524.95" class="st4"/>
+				<text x="4" y="542.44" class="st7">FK1 <tspan dx="1.148em" class="st14">USER_PATTERN_ID </tspan><tspan x="4"
+							dy="1.2em" class="st14"> </tspan><tspan dx="2.407em" class="st14">NAME </tspan><tspan x="4" dy="1.2em"
+							class="st14"> </tspan><tspan dx="2.407em" class="st14">TYPE </tspan><tspan x="4" dy="1.2em"
+							class="st14"> </tspan><tspan dx="2.407em" class="st14">SUPPORT : [List] </tspan><tspan x="4" dy="1.2em"
+							class="st14"> </tspan><tspan dx="2.407em" class="st14">SETS : [List] </tspan><tspan x="4" dy="1.2em"
+							class="st14"> </tspan><tspan dx="2.407em" class="st14">LABEL</tspan></text>			</g>
+		</g>
+		<g id="shape46-145" transform="translate(585.638,-103.501)">
+			<title>Relación.46</title>
+			<path d="M15.12 602.36 L15.48 602.36 L97.27 602.36" class="st12"/>
+		</g>
+		<g id="group47-152" transform="translate(571.465,-306.839)">
+			<title>Entidad.47</title>
+			<g id="shape48-153" transform="translate(0,-80.0038)">
+				<title>Hoja.48</title>
+				<desc>MARKETS</desc>
+				<rect x="0" y="589.445" width="166.13" height="20.0036" class="st6"/>
+				<text x="63.41" y="602.45" class="st7">MARKETS</text>			</g>
+			<g id="shape49-156">
+				<title>Hoja.49</title>
+				<desc>FK2 DEMAND_PATTERN_ID FK1 MARKET POTENTIAL_DEMAND POTENTIAL_D...</desc>
+				<path d="M0 609.45 L166.13 609.45 L166.13 529.44 L0 529.44 L0 609.45 Z" class="st8"/>
+				<path d="M0 609.45 L166.13 609.45 L166.13 529.44 L0 529.44 L0 609.45" class="st4"/>
+				<path d="M26.33 609.45 L26.33 529.44" class="st4"/>
+				<path d="M0 549.45 L166.13 549.45" class="st4"/>
+				<text x="4" y="566.45" class="st7">FK2 <tspan dx="1.148em" class="st14">DEMAND_PATTERN_ID </tspan><tspan x="4"
+							dy="1.2em" class="st14">FK1 </tspan><tspan dx="1.148em" class="st14">MARKET </tspan><tspan x="4"
+							dy="1.2em" class="st14"> </tspan><tspan dx="2.407em" class="st14">POTENTIAL_DEMAND </tspan><tspan x="4"
+							dy="1.2em" class="st14"> </tspan><tspan dx="2.407em" class="st14">POTENTIAL_DEMAND_KWARGS</tspan></text>			</g>
+		</g>
+		<g id="shape50-169" transform="translate(519.154,-349.756)">
+			<title>Relación.50</title>
+			<path d="M15.12 602.36 L15.48 602.36 L36.83 602.36" class="st12"/>
+		</g>
+		<g id="shape51-176" transform="translate(760.829,-434.568)">
+			<title>Relación.51</title>
+			<path d="M0 624.57 L0 624.93 L0 687.17 L-7.75 687.17" class="st12"/>
+		</g>
+		<g id="group52-183" transform="translate(660.809,-200.938)">
+			<title>Entidad.52</title>
+			<g id="shape53-184" transform="translate(0,-80.0038)">
+				<title>Hoja.53</title>
+				<desc>USER_PATTERN_DISTRIBUTION</desc>
+				<rect x="0" y="589.445" width="137.427" height="20.0036" class="st6"/>
+				<text x="5.13" y="602.45" class="st7">USER_PATTERN_DISTRIBUTION</text>			</g>
+			<g id="shape54-187">
+				<title>Hoja.54</title>
+				<desc>FK2 MARKET_ID FK1 DEMAND_PATTERN_ID FK3 USER_PATTERN_ID PERCE...</desc>
+				<path d="M0 609.45 L137.43 609.45 L137.43 529.44 L0 529.44 L0 609.45 Z" class="st8"/>
+				<path d="M0 609.45 L137.43 609.45 L137.43 529.44 L0 529.44 L0 609.45" class="st4"/>
+				<path d="M26.33 609.45 L26.33 529.44" class="st4"/>
+				<path d="M0 549.45 L137.43 549.45" class="st4"/>
+				<text x="4" y="566.45" class="st7">FK2 <tspan dx="1.148em" class="st14">MARKET_ID </tspan><tspan x="4" dy="1.2em"
+							class="st14">FK1 </tspan><tspan dx="1.148em" class="st14">DEMAND_PATTERN_ID </tspan><tspan x="4"
+							dy="1.2em" class="st14">FK3 </tspan><tspan dx="1.148em" class="st14">USER_PATTERN_ID </tspan><tspan
+							x="4" dy="1.2em" class="st14"> </tspan><tspan dx="2.407em" class="st14">PERCENTAGE</tspan></text>			</g>
+		</g>
+		<g id="shape55-200" transform="translate(776.976,-434.568)">
+			<title>Relación.55</title>
+			<path d="M7.09 624.57 L7.09 624.93 L7.09 727.59" class="st12"/>
+		</g>
+		<g id="shape56-207" transform="translate(360.229,-306.839)">
+			<title>Relación.56</title>
+			<path d="M0 624.57 L0 624.93 L0 639.3 L285.1 639.3" class="st12"/>
+		</g>
+		<g id="shape57-214" transform="translate(585.638,-219.902)">
+			<title>Relación.57</title>
+			<path d="M15.12 602.36 L15.48 602.36 L59.69 602.36" class="st12"/>
+		</g>
+		<g id="group58-221" transform="translate(27.6101,-468.916)">
+			<title>Entidad.58</title>
+			<g id="shape59-222" transform="translate(0,-56.0037)">
+				<title>Hoja.59</title>
+				<desc>TESTS</desc>
+				<rect x="0" y="589.445" width="95.5828" height="20.0036" class="st6"/>
+				<text x="35.88" y="602.45" class="st7">TESTS</text>			</g>
+			<g id="shape60-225">
+				<title>Hoja.60</title>
+				<desc>PK ID NAME OBSERVATIONS</desc>
+				<path d="M0 609.45 L95.58 609.45 L95.58 553.45 L0 553.45 L0 609.45 Z" class="st8"/>
+				<path d="M0 609.45 L95.58 609.45 L95.58 553.45 L0 553.45 L0 609.45" class="st4"/>
+				<path d="M21.83 609.45 L21.83 553.45" class="st4"/>
+				<path d="M0 574.45 L95.58 574.45" class="st4"/>
+				<text x="4" y="566.45" class="st9">PK <tspan dx="1.104em" class="st10">ID  </tspan><tspan x="4" dy="2.4em"
+							class="st11"> </tspan><tspan dx="1.957em" class="st11">NAME </tspan><tspan x="4" dy="1.2em"
+							class="st11"> </tspan><tspan dx="1.957em" class="st11">OBSERVATIONS</tspan></text>			</g>
+		</g>
+		<g id="group61-236" transform="translate(128.978,-380.674)">
+			<title>Entidad.61</title>
+			<g id="shape62-237" transform="translate(0,-56.0037)">
+				<title>Hoja.62</title>
+				<desc>AUX_DEMAND_PATTERN</desc>
+				<rect x="0" y="589.445" width="130.675" height="20.0036" class="st6"/>
+				<text x="13.94" y="602.45" class="st7">AUX_DEMAND_PATTERN</text>			</g>
+			<g id="shape63-240">
+				<title>Hoja.63</title>
+				<desc>PK ID FK1 DEMAND_PATTERN_ID FK2 TEST_ID</desc>
+				<path d="M0 609.45 L130.68 609.45 L130.68 553.45 L0 553.45 L0 609.45 Z" class="st8"/>
+				<path d="M0 609.45 L130.68 609.45 L130.68 553.45 L0 553.45 L0 609.45" class="st4"/>
+				<path d="M26.33 609.45 L26.33 553.45" class="st4"/>
+				<path d="M0 574.45 L130.68 574.45" class="st4"/>
+				<text x="4" y="566.45" class="st9">PK <tspan dx="1.554em" class="st10">ID  </tspan><tspan x="4" dy="2.4em"
+							class="st11">FK1 </tspan><tspan dx="1.148em" class="st11">DEMAND_PATTERN_ID </tspan><tspan x="4"
+							dy="1.2em" class="st11">FK2 </tspan><tspan dx="1.148em" class="st11">TEST_ID</tspan></text>			</g>
+		</g>
+		<g id="group64-251" transform="translate(117.921,-276.32)">
+			<title>Entidad.64</title>
+			<g id="shape65-252" transform="translate(0,-56.0037)">
+				<title>Hoja.65</title>
+				<desc>AUX_MARKET</desc>
+				<rect x="0" y="589.445" width="84.9675" height="20.0036" class="st6"/>
+				<text x="13.94" y="602.45" class="st7">AUX_MARKET</text>			</g>
+			<g id="shape66-255">
+				<title>Hoja.66</title>
+				<desc>PK ID FK1 MARKET_ID FK2 TEST_ID</desc>
+				<path d="M0 609.45 L84.97 609.45 L84.97 553.45 L0 553.45 L0 609.45 Z" class="st8"/>
+				<path d="M0 609.45 L84.97 609.45 L84.97 553.45 L0 553.45 L0 609.45" class="st4"/>
+				<path d="M26.33 609.45 L26.33 553.45" class="st4"/>
+				<path d="M0 574.45 L84.97 574.45" class="st4"/>
+				<text x="4" y="566.45" class="st9">PK <tspan dx="1.554em" class="st10">ID  </tspan><tspan x="4" dy="2.4em"
+							class="st11">FK1 </tspan><tspan dx="1.148em" class="st11">MARKET_ID </tspan><tspan x="4" dy="1.2em"
+							class="st11">FK2 </tspan><tspan dx="1.148em" class="st11">TEST_ID</tspan></text>			</g>
+		</g>
+		<g id="group67-266" transform="translate(145.633,-115.898)">
+			<title>Entidad.67</title>
+			<g id="shape68-267" transform="translate(0,-56.0037)">
+				<title>Hoja.68</title>
+				<desc>AUX_USER_PATTERN</desc>
+				<rect x="0" y="589.445" width="114.02" height="20.0036" class="st6"/>
+				<text x="13.94" y="602.45" class="st7">AUX_USER_PATTERN</text>			</g>
+			<g id="shape69-270">
+				<title>Hoja.69</title>
+				<desc>PK ID FK1 USER_PATTERN_ID FK2 TEST_ID</desc>
+				<path d="M0 609.45 L114.02 609.45 L114.02 553.45 L0 553.45 L0 609.45 Z" class="st8"/>
+				<path d="M0 609.45 L114.02 609.45 L114.02 553.45 L0 553.45 L0 609.45" class="st4"/>
+				<path d="M26.33 609.45 L26.33 553.45" class="st4"/>
+				<path d="M0 574.45 L114.02 574.45" class="st4"/>
+				<text x="4" y="566.45" class="st9">PK <tspan dx="1.554em" class="st10">ID  </tspan><tspan x="4" dy="2.4em"
+							class="st11">FK1 </tspan><tspan dx="1.148em" class="st11">USER_PATTERN_ID </tspan><tspan x="4"
+							dy="1.2em" class="st11">FK2 </tspan><tspan dx="1.148em" class="st11">TEST_ID</tspan></text>			</g>
+		</g>
+		<g id="shape70-281" transform="translate(724.545,-438.538)">
+			<title>Relación.70</title>
+			<path d="M-15.12 602.36 L-15.48 602.36 L-449.41 602.36" class="st12"/>
+		</g>
+		<g id="shape71-288" transform="translate(330.52,-322.497)">
+			<title>Relación.71</title>
+			<path d="M-15.12 602.36 L-15.48 602.36 L-112.15 602.36" class="st12"/>
+		</g>
+		<g id="shape73-295" transform="translate(389.938,-146.815)">
+			<title>Relación.73</title>
+			<path d="M-15.12 602.36 L-15.48 602.36 L-114.8 602.36" class="st12"/>
+		</g>
+		<g id="shape74-302" transform="translate(94.0457,-468.916)">
+			<title>Relación.74</title>
+			<path d="M0 624.57 L0 624.93 L0 659.69 L19.45 659.69" class="st12"/>
+		</g>
+		<g id="shape75-309" transform="translate(64.8985,-468.916)">
+			<title>Relación.75</title>
+			<path d="M0 624.57 L0 624.93 L0 765.72 L37.54 765.72" class="st12"/>
+		</g>
+		<g id="shape76-316" transform="translate(41.7737,-468.916)">
+			<title>Relación.76</title>
+			<path d="M0 624.57 L0 624.93 L0 924.46 L88.38 924.46" class="st12"/>
+		</g>
+		<g id="group77-323" transform="translate(288.212,-465.088)">
+			<title>Entidad.77</title>
+			<g id="shape78-324" transform="translate(0,-56.0037)">
+				<title>Hoja.78</title>
+				<desc>AUX_DAY</desc>
+				<rect x="0" y="589.445" width="69.474" height="20.0036" class="st6"/>
+				<text x="15.14" y="602.45" class="st7">AUX_DAY</text>			</g>
+			<g id="shape79-327">
+				<title>Hoja.79</title>
+				<desc>PK ID FK2 DAY_ID FK1 TEST_ID</desc>
+				<path d="M0 609.45 L69.47 609.45 L69.47 553.45 L0 553.45 L0 609.45 Z" class="st8"/>
+				<path d="M0 609.45 L69.47 609.45 L69.47 553.45 L0 553.45 L0 609.45" class="st4"/>
+				<path d="M26.33 609.45 L26.33 553.45" class="st4"/>
+				<path d="M0 574.45 L69.47 574.45" class="st4"/>
+				<text x="4" y="566.45" class="st9">PK <tspan dx="1.554em" class="st10">ID  </tspan><tspan x="4" dy="2.4em"
+							class="st11">FK2 </tspan><tspan dx="1.148em" class="st11">DAY_ID </tspan><tspan x="4" dy="1.2em"
+							class="st11">FK1 </tspan><tspan dx="1.148em" class="st11">TEST_ID</tspan></text>			</g>
+		</g>
+		<g id="shape80-338" transform="translate(123.193,-497.919)">
+			<title>Relación.80</title>
+			<path d="M15.12 602.36 L15.48 602.36 L149.54 602.36" class="st12"/>
+		</g>
+		<g id="shape81-345" transform="translate(486.425,-498.575)">
+			<title>Relación.81</title>
+			<path d="M-15.12 602.36 L-15.48 602.36 L-113.26 602.36" class="st12"/>
+		</g>
+	</g>
+</svg>
