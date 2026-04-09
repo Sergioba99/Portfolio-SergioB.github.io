@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- PLANTILLA DE PROYECTO CON VIDEO + CARRUSEL
+       Instrucciones:
+       1. Copia este archivo y renómbralo (ej: mi-proyecto-media.html)
+       2. Sube el vídeo a media/nombre-proyecto/ y las imágenes a img/nombre-proyecto/
+       3. El vídeo queda a la izquierda; el texto a la derecha; y el carrusel debajo del texto
+  -->
+  <title>[NOMBRE DEL PROYECTO] — Sergio Berraco</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .project-media-layout {
+      display: grid;
+      grid-template-columns: minmax(220px, 320px) minmax(0, 1fr);
+      gap: 1.5rem;
+      align-items: start;
+      margin: 1.5rem 0;
+    }
+
+    .project-video-wrapper {
+      position: relative;
+      width: 100%;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 18px;
+      overflow: hidden;
+      background: rgba(255,255,255,0.03);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+      aspect-ratio: 9 / 16;
+      max-height: 560px;
+    }
+
+    .project-video-wrapper video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      background: #0b0f19;
+    }
+
+    .video-placeholder {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 1rem;
+      color: rgba(255,255,255,0.7);
+      font: 500 0.95rem/1.5 'Roboto', sans-serif;
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      pointer-events: none;
+    }
+
+    .video-placeholder.hidden {
+      display: none;
+    }
+
+    .carousel-slide img {
+      cursor: zoom-in;
+    }
+
+    .image-lightbox {
+      position: fixed;
+      inset: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      background: rgba(6, 10, 20, 0.88);
+      backdrop-filter: blur(6px);
+      z-index: 9999;
+    }
+
+    .image-lightbox.open {
+      display: flex;
+    }
+
+    .image-lightbox img {
+      max-width: min(1100px, 92vw);
+      max-height: 86vh;
+      border-radius: 18px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+      border: 1px solid rgba(255,255,255,0.08);
+      background: #0b0f19;
+    }
+
+    .image-lightbox button {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      width: 42px;
+      height: 42px;
+      border: 0;
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      background: rgba(255,255,255,0.12);
+      color: white;
+    }
+
+    .project-content-column {
+      min-width: 0;
+    }
+
+    .project-content-column .carousel {
+      margin-top: 1.5rem;
+    }
+
+    @media (max-width: 900px) {
+      .project-media-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .project-video-wrapper {
+        max-width: 320px;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Sergio <span>Berraco</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html#sobre-mi">Sobre mí</a></li>
+    <li><a href="index.html#stack">Stack</a></li>
+    <li><a href="index.html#proyectos" class="active">Proyectos</a></li>
+    <li><a href="index.html#contacto">Contacto</a></li>
+  </ul>
+</nav>
+
+<section id="proyectos">
+  <div class="project-card wip">
+    <div class="card-top">
+      <div class="card-tags">
+        <span class="tag">[TECNOLOGÍA PRINCIPAL]</span>
+        <span class="tag">[TECNOLOGÍA SECUNDARIA]</span>
+        <span class="tag-wip">En desarrollo</span>
+      </div>
+      <span class="tag-pub">[PLATAFORMA]</span>
+    </div>
+
+    <div class="project-title">[Título completo del proyecto]</div>
+
+    <div class="project-media-layout">
+      <div>
+        <div class="project-video-wrapper">
+          <video controls preload="metadata" playsinline>
+            <source src="media/[NOMBRE-PROYECTO]/demo.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de vídeo HTML5.
+          </video>
+          <div class="video-placeholder">Sube aquí un vídeo vertical del proyecto para verlo dentro de la tarjeta</div>
+        </div>
+      </div>
+
+      <div class="project-content-column">
+        <div class="block">
+          <div class="block-label">Reto</div>
+          <div class="block-text">[Describe el problema que resuelve el proyecto. Qué necesidad existía, qué limitación había, qué era costoso o imposible antes.]</div>
+        </div>
+
+        <div class="block">
+          <div class="block-label">Solución</div>
+          <div class="block-text">[Describe cómo lo resolviste. Qué construiste, cómo funciona, qué decisiones técnicas tomaste.]</div>
+        </div>
+
+        <div class="block">
+          <div class="block-label">Estado actual</div>
+          <div class="block-text">[Qué está hecho, qué está en curso, qué está pendiente.]</div>
+        </div>
+
+        <div class="carousel" id="carousel-[ID-UNICO]">
+          <div class="carousel-track">
+            <div class="carousel-slide">
+              <img src="img/[NOMBRE-PROYECTO]/imagen-1.jpg" alt="[Descripción de la imagen 1]">
+              <div class="slide-caption">[Pie de foto opcional]</div>
+            </div>
+            <div class="carousel-slide">
+              <img src="img/[NOMBRE-PROYECTO]/imagen-2.jpg" alt="[Descripción de la imagen 2]">
+              <div class="slide-caption">[Pie de foto opcional]</div>
+            </div>
+            <div class="carousel-slide">
+              <img src="img/[NOMBRE-PROYECTO]/imagen-3.jpg" alt="[Descripción de la imagen 3]">
+              <div class="slide-caption">[Pie de foto opcional]</div>
+            </div>
+          </div>
+          <button class="carousel-btn prev" onclick="moveCarousel('carousel-[ID-UNICO]', -1)">&#8249;</button>
+          <button class="carousel-btn next" onclick="moveCarousel('carousel-[ID-UNICO]', 1)">&#8250;</button>
+          <div class="carousel-dots" id="dots-carousel-[ID-UNICO]"></div>
+        </div>
+
+        <div class="badges">
+          <span class="badge main">[Tech principal 1]</span>
+          <span class="badge main">[Tech principal 2]</span>
+          <span class="badge">[Tech secundaria 1]</span>
+          <span class="badge">[Tech secundaria 2]</span>
+        </div>
+
+        <a class="repo-link" href="[URL]" target="_blank" rel="noopener">
+          <img src="[URL-FAVICON]" width="14" height="14" style="vertical-align:middle;border-radius:2px;" alt="[Plataforma]"/>
+          [texto visible del enlace]
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="image-lightbox" id="image-lightbox" aria-hidden="true">
+  <button type="button" aria-label="Cerrar visor" onclick="closeLightbox()">✕</button>
+  <img id="lightbox-image" src="" alt="Imagen ampliada del proyecto">
+</div>
+
+<footer>
+  <span class="footer-copy">© 2025 · Sergio Berraco</span>
+  <div class="footer-links">
+    <a href="https://github.com/Sergioba99" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.spigotmc.org/members/sergioba_99.849637/" target="_blank" rel="noopener">SpigotMC</a>
+    <a href="https://www.nexusmods.com/profile/Sergioba99" target="_blank" rel="noopener">Nexusmods</a>
+    <a href="mailto:sergio.berraco99@gmail.com">Email</a>
+  </div>
+</footer>
+
+<script>
+function initCarousel(id) {
+  const carousel = document.getElementById(id);
+  if (!carousel) return;
+  const slides = carousel.querySelectorAll('.carousel-slide');
+  if (slides.length === 0) {
+    carousel.querySelector('.carousel-track').innerHTML =
+      '<div class="carousel-empty">Sin imágenes todavía</div>';
+    carousel.querySelector('.prev').style.display = 'none';
+    carousel.querySelector('.next').style.display = 'none';
+    return;
+  }
+  const dotsContainer = document.getElementById('dots-' + id);
+  slides.forEach((slide, i) => {
+    const dot = document.createElement('button');
+    dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+    dot.onclick = () => goToSlide(id, i);
+    dotsContainer.appendChild(dot);
+
+    const image = slide.querySelector('img');
+    if (image) {
+      image.addEventListener('click', () => openLightbox(image.src, image.alt));
+    }
+  });
+  if (slides.length === 1) {
+    carousel.querySelector('.prev').style.display = 'none';
+    carousel.querySelector('.next').style.display = 'none';
+  }
+}
+
+function moveCarousel(id, dir) {
+  const carousel = document.getElementById(id);
+  const slides = carousel.querySelectorAll('.carousel-slide');
+  const current = getCurrentIndex(id, slides.length);
+  goToSlide(id, (current + dir + slides.length) % slides.length);
+}
+
+function getCurrentIndex(id, total) {
+  const track = document.querySelector('#' + id + ' .carousel-track');
+  const val = track.style.transform || 'translateX(0%)';
+  const match = val.match(/-?([\d.]+)%/);
+  if (!match) return 0;
+  return Math.round(parseFloat(match[1]) / 100) % total;
+}
+
+function goToSlide(id, index) {
+  const carousel = document.getElementById(id);
+  const dots = carousel.querySelectorAll('.carousel-dot');
+  carousel.querySelector('.carousel-track').style.transform = `translateX(-${index * 100}%)`;
+  dots.forEach((d, i) => d.classList.toggle('active', i === index));
+}
+
+function openLightbox(src, alt) {
+  const lightbox = document.getElementById('image-lightbox');
+  const img = document.getElementById('lightbox-image');
+  img.src = src;
+  img.alt = alt || 'Imagen ampliada del proyecto';
+  lightbox.classList.add('open');
+  lightbox.setAttribute('aria-hidden', 'false');
+}
+
+function closeLightbox() {
+  const lightbox = document.getElementById('image-lightbox');
+  const img = document.getElementById('lightbox-image');
+  lightbox.classList.remove('open');
+  lightbox.setAttribute('aria-hidden', 'true');
+  img.src = '';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.carousel').forEach(c => initCarousel(c.id));
+  document.querySelectorAll('.project-video-wrapper video').forEach(video => {
+    const placeholder = video.parentElement.querySelector('.video-placeholder');
+    const hidePlaceholder = () => placeholder?.classList.add('hidden');
+    const showPlaceholder = () => {
+      if (!video.currentSrc) placeholder?.classList.remove('hidden');
+    };
+    video.addEventListener('loadeddata', hidePlaceholder);
+    video.addEventListener('canplay', hidePlaceholder);
+    video.addEventListener('error', showPlaceholder);
+  });
+  document.getElementById('image-lightbox').addEventListener('click', (e) => {
+    if (e.target.id === 'image-lightbox') closeLightbox();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
+  });
+});
+</script>
+
+</body>
+</html>
