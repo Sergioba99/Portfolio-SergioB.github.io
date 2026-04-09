@@ -46,6 +46,13 @@ const PROJECTS = [
       });
   }
 
+  function preloadProjectFragments() {
+    PROJECTS.forEach((project, i) => {
+      if (i === currentIndex) return;
+      fetchTextCached(`${project}?v=${ASSET_VERSION}`).catch(() => {});
+    });
+  }
+
   function navigateProject(dir) {
     const next = currentIndex + dir;
     if (next >= 0 && next < PROJECTS.length) loadProject(next);
@@ -154,6 +161,10 @@ const PROJECTS = [
     return promise;
   }
 
+  const schedulePreload = window.requestIdleCallback
+    ? cb => window.requestIdleCallback(cb, { timeout: 1500 })
+    : cb => setTimeout(cb, 900);
+
   async function loadComponent(id, url) {
     const el = document.getElementById(id);
     if (!el) return;
@@ -166,3 +177,4 @@ const PROJECTS = [
   }
 loadComponent('main-nav', `/Portfolio.Sergio.B.github.io/html/navigation.html?v=${ASSET_VERSION}`);
 loadComponent('main-footer', `/Portfolio.Sergio.B.github.io/html/footer.html?v=${ASSET_VERSION}`);
+schedulePreload(preloadProjectFragments);

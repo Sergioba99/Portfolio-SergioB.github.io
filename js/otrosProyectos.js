@@ -8,6 +8,7 @@
 const ASSET_VERSION = '20260407';
 const PROJECT_BASE = '/Portfolio.Sergio.B.github.io/';
 const FETCH_CACHE = new Map();
+const PROJECT_PREFETCH_RADIUS = 2;
 
   const PROJECTS = [
     // Ejemplo — descomenta y adapta cuando muevas proyectos:
@@ -75,10 +76,41 @@ const FETCH_CACHE = new Map();
         void viewer.offsetWidth;
         viewer.classList.add('op-fade');
         viewer.querySelectorAll('.carousel').forEach(c => initCarousel(c.id));
+        scheduleProjectWindowPrefetch(index);
       })
       .catch(() => {
         viewer.innerHTML = '<div class="op-loading">No se pudo cargar el proyecto.</div>';
       });
+  }
+
+  function scheduleProjectWindowPrefetch(centerIndex) {
+    const run = () => syncProjectWindow(centerIndex);
+    if (window.requestIdleCallback) {
+      window.requestIdleCallback(run, { timeout: 1200 });
+    } else {
+      setTimeout(run, 400);
+    }
+  }
+
+  function syncProjectWindow(centerIndex) {
+    const desiredUrls = new Set();
+    const start = Math.max(0, centerIndex - PROJECT_PREFETCH_RADIUS);
+    const end = Math.min(PROJECTS.length - 1, centerIndex + PROJECT_PREFETCH_RADIUS);
+
+    for (let i = start; i <= end; i++) {
+      desiredUrls.add(`${PROJECT_BASE}${PROJECTS[i].file}?v=${ASSET_VERSION}`);
+    }
+
+    desiredUrls.forEach(url => {
+      fetchTextCached(url).catch(() => {});
+    });
+
+    for (const key of FETCH_CACHE.keys()) {
+      if (!key.includes('/projects/')) continue;
+      if (!desiredUrls.has(key)) {
+        FETCH_CACHE.delete(key);
+      }
+    }
   }
 
   function opNavigate(dir) {
