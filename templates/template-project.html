@@ -201,32 +201,66 @@ function initCarousel(id) {
     carousel.querySelector('.prev').style.display = 'none';
     carousel.querySelector('.next').style.display = 'none';
   }
+  const track = carousel.querySelector('.carousel-track');
+  if (track && !track.dataset.bound) {
+    track.dataset.bound = 'true';
+    const updateDots = () => syncCarouselDots(id);
+    track.addEventListener('scroll', () => {
+      if (track._raf) cancelAnimationFrame(track._raf);
+      track._raf = requestAnimationFrame(updateDots);
+    });
+    window.addEventListener('resize', updateDots);
+  }
+  syncCarouselDots(id);
 }
 
 function moveCarousel(id, dir) {
   const carousel = document.getElementById(id);
-  const slides = carousel.querySelectorAll('.carousel-slide');
-  const dots = carousel.querySelectorAll('.carousel-dot');
-  let current = Math.round(carousel.querySelector('.carousel-track').style.transform
-    ? parseFloat(carousel.querySelector('.carousel-track').style.transform.replace(/[^0-9.-]/g, '')) / -100 * slides.length / slides.length
-    : 0);
-  current = getCurrentIndex(id, slides.length);
-  goToSlide(id, (current + dir + slides.length) % slides.length);
+  const slides = getCarouselSlides(id);
+  const track = carousel ? carousel.querySelector('.carousel-track') : null;
+  if (!carousel || !track || !slides.length) return;
+  track.scrollBy({ left: dir * getSlideStep(slides), behavior: 'smooth' });
 }
 
 function getCurrentIndex(id, total) {
-  const track = document.querySelector('#' + id + ' .carousel-track');
-  const val = track.style.transform || 'translateX(0%)';
-  const match = val.match(/-?([\d.]+)%/);
-  if (!match) return 0;
-  return Math.round(parseFloat(match[1]) / 100) % total;
+  const slides = getCarouselSlides(id);
+  const carousel = document.getElementById(id);
+  const track = carousel ? carousel.querySelector('.carousel-track') : null;
+  if (!track || !slides.length) return 0;
+  const step = getSlideStep(slides);
+  if (!step) return 0;
+  return Math.max(0, Math.min(total - 1, Math.round(track.scrollLeft / step)));
 }
 
 function goToSlide(id, index) {
   const carousel = document.getElementById(id);
+  const slides = getCarouselSlides(id);
+  const target = slides[index];
+  if (!carousel || !target) return;
+  target.scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+  syncCarouselDots(id);
+}
+
+function getCarouselSlides(id) {
+  const carousel = document.getElementById(id);
+  return carousel ? Array.from(carousel.querySelectorAll('.carousel-slide')) : [];
+}
+
+function getSlideStep(slides) {
+  return slides.length ? slides[0].offsetWidth : 0;
+}
+
+function syncCarouselDots(id) {
+  const carousel = document.getElementById(id);
+  if (!carousel) return;
   const dots = carousel.querySelectorAll('.carousel-dot');
-  carousel.querySelector('.carousel-track').style.transform = `translateX(-${index * 100}%)`;
-  dots.forEach((d, i) => d.classList.toggle('active', i === index));
+  const slides = getCarouselSlides(id);
+  const current = getCurrentIndex(id, slides.length);
+  dots.forEach((d, i) => d.classList.toggle('active', i === current));
+  const prev = carousel.querySelector('.prev');
+  const next = carousel.querySelector('.next');
+  if (prev) prev.disabled = current === 0;
+  if (next) next.disabled = current >= Math.max(0, slides.length - 1);
 }
 
 function getLightboxSlides(id) {
