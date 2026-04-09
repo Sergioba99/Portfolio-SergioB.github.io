@@ -645,13 +645,15 @@ h2 {
 }
 .lightbox-nav {
   position: absolute;
-  inset: 0;
+  top: 50%;
+  left: -52px;
+  right: -52px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  padding: 0 10px;
   pointer-events: none;
+  transform: translateY(-50%);
 }
 .lightbox-nav button {
   width: 44px;
@@ -761,6 +763,10 @@ footer {
   .lightbox-nav {
     position: static;
     inset: auto;
+    top: auto;
+    left: auto;
+    right: auto;
+    transform: none;
     padding: 0;
     justify-content: center;
     pointer-events: auto;
