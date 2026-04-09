@@ -113,7 +113,7 @@ section { padding: 72px 40px; max-width: var(--content-width); margin: 0 auto; }
 /* ── HERO ── */
 #hero {
   padding: 96px 40px 80px;
-  max-width: var(--content-width-wide);
+  max-width: var(--content-width);
 }
 .hero-tag {
   display: inline-flex;
@@ -216,7 +216,7 @@ h2 {
 
 /* ── CONTRIBUTION ── */
 .contribution-section {
-  max-width: 100%;
+  max-width: var(--content-width);
 }
 .contribution-section .contribution-card {
   width: 100%;
@@ -743,18 +743,7 @@ footer {
 }
 
 @media (min-width: 1400px) {
-  .container,
-  .divider,
-  section,
-  footer {
-    max-width: var(--content-width-wide);
-  }
-
-  #hero {
-    max-width: calc(var(--content-width-wide) + 120px);
-  }
-
   .pv-wrapper {
-    max-width: calc(var(--content-width-wide) + 80px);
+    max-width: var(--content-width);
   }
 }
