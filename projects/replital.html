@@ -52,18 +52,8 @@
         display: none;
       }
 
-      .video-note {
-        margin-top: 0.65rem;
-        font: 400 0.88rem/1.5 'Roboto', sans-serif;
-        color: var(--muted);
-      }
-
       .project-content-column {
         min-width: 0;
-      }
-
-      .project-content-column .carousel {
-        margin-top: 1.5rem;
       }
 
       .project-content-column .carousel-slide img {
@@ -102,7 +92,6 @@
           </video>
           <div class="video-placeholder">Vídeo de presentación de RepliTal</div>
         </div>
-        <div class="video-note">El vídeo muestra el estado actual del proyecto y la dirección de trabajo sobre la síntesis inversa desde audio.</div>
       </div>
 
       <div class="project-content-column">
@@ -121,22 +110,23 @@
           <div class="block-text">Generador de dataset funcional en desarrollo. Arquitectura CNN + cabeza de regresión multisalida definida. Entrenamiento pendiente de contar con un dataset suficiente.</div>
         </div>
 
-        <div class="carousel" id="carousel-replital">
-          <div class="carousel-track"></div>
-          <button class="carousel-btn prev" onclick="moveCarousel('carousel-replital', -1)">&#8249;</button>
-          <button class="carousel-btn next" onclick="moveCarousel('carousel-replital', 1)">&#8250;</button>
-          <div class="carousel-dots" id="dots-carousel-replital"></div>
-        </div>
-
-        <div class="badges">
-          <span class="badge main">PyTorch</span>
-          <span class="badge main">CNN</span>
-          <span class="badge main">Espectrograma Mel</span>
-          <span class="badge">Python</span>
-          <span class="badge">Síntesis de audio</span>
-          <span class="badge">Regresión multisalida</span>
-        </div>
       </div>
+    </div>
+
+    <div class="carousel" id="carousel-replital">
+      <div class="carousel-track"></div>
+      <button class="carousel-btn prev" onclick="moveCarousel('carousel-replital', -1)">&#8249;</button>
+      <button class="carousel-btn next" onclick="moveCarousel('carousel-replital', 1)">&#8250;</button>
+      <div class="carousel-dots" id="dots-carousel-replital"></div>
+    </div>
+
+    <div class="badges">
+      <span class="badge main">PyTorch</span>
+      <span class="badge main">CNN</span>
+      <span class="badge main">Espectrograma Mel</span>
+      <span class="badge">Python</span>
+      <span class="badge">Síntesis de audio</span>
+      <span class="badge">Regresión multisalida</span>
     </div>
   </div>
 </div>

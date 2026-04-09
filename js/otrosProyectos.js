@@ -103,12 +103,10 @@
     if (!dotsContainer) return;
     dotsContainer.innerHTML = '';
     if (slides.length === 0) {
-      carousel.querySelector('.carousel-track').innerHTML =
-        '<div class="carousel-empty">Sin imágenes todavía</div>';
-      carousel.querySelector('.prev').style.display = 'none';
-      carousel.querySelector('.next').style.display = 'none';
+      carousel.style.display = 'none';
       return;
     }
+    carousel.style.display = '';
     slides.forEach((_, i) => {
       const dot = document.createElement('button');
       dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');

@@ -155,12 +155,10 @@ function initCarousel(id) {
   if (!carousel) return;
   const slides = carousel.querySelectorAll('.carousel-slide');
   if (slides.length === 0) {
-    carousel.querySelector('.carousel-track').innerHTML =
-      '<div class="carousel-empty">Sin imágenes todavía</div>';
-    carousel.querySelector('.prev').style.display = 'none';
-    carousel.querySelector('.next').style.display = 'none';
+    carousel.style.display = 'none';
     return;
   }
+  carousel.style.display = '';
   const dotsContainer = document.getElementById('dots-' + id);
   slides.forEach((slide, i) => {
     const dot = document.createElement('button');
