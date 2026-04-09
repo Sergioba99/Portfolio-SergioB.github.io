@@ -170,16 +170,21 @@ const PROJECT_PREFETCH_RADIUS = 2;
       carousel.querySelector('.prev').style.display = 'none';
       carousel.querySelector('.next').style.display = 'none';
     }
-    const track = carousel.querySelector('.carousel-track');
-    if (track && !track.dataset.bound) {
-      track.dataset.bound = 'true';
-      const updateDots = () => syncCarouselDots(id);
-      track.addEventListener('scroll', () => {
-        if (track._raf) cancelAnimationFrame(track._raf);
-        track._raf = requestAnimationFrame(updateDots);
-      });
-      window.addEventListener('resize', updateDots);
-    }
+  const track = carousel.querySelector('.carousel-track');
+  if (track && !track.dataset.bound) {
+    track.dataset.bound = 'true';
+    const syncActiveDot = () => syncCarouselDots(id);
+    const rebuildDots = () => {
+      buildCarouselDots(id);
+      syncCarouselDots(id);
+    };
+    track.addEventListener('scroll', () => {
+      if (track._raf) cancelAnimationFrame(track._raf);
+      track._raf = requestAnimationFrame(syncActiveDot);
+    });
+    window.addEventListener('resize', rebuildDots);
+  }
+    buildCarouselDots(id);
     syncCarouselDots(id);
   }
 
@@ -249,46 +254,64 @@ const PROJECT_PREFETCH_RADIUS = 2;
   function moveCarousel(id, dir) {
     const carousel = document.getElementById(id);
     const track = carousel ? carousel.querySelector('.carousel-track') : null;
-    const slides = getCarouselSlides(id);
-    if (!track || slides.length === 0) return;
-    const step = getSlideStep(slides);
-    track.scrollBy({ left: dir * step, behavior: 'smooth' });
+    if (!track) return;
+    track.scrollBy({ left: dir * track.clientWidth, behavior: 'smooth' });
   }
 
   function getCurrentSlide(id, total) {
     const carousel = document.getElementById(id);
     const track = carousel ? carousel.querySelector('.carousel-track') : null;
-    const slides = getCarouselSlides(id);
-    if (!track || slides.length === 0) return 0;
-    const step = getSlideStep(slides);
-    if (!step) return 0;
-    return Math.max(0, Math.min(total - 1, Math.round(track.scrollLeft / step)));
+    if (!track || total === 0) return 0;
+    const page = Math.round(track.scrollLeft / track.clientWidth);
+    return Math.max(0, Math.min(total - 1, page));
   }
 
   function goToSlide(id, index) {
     const carousel = document.getElementById(id);
-    const slides = getCarouselSlides(id);
-    const target = slides[index];
-    if (!carousel || !target) return;
-    target.scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+    const track = carousel ? carousel.querySelector('.carousel-track') : null;
+    const pages = getCarouselPageCount(id);
+    if (!track || pages === 0) return;
+    const target = Math.max(0, Math.min(pages - 1, index));
+    track.scrollTo({ left: target * track.clientWidth, behavior: 'smooth' });
     syncCarouselDots(id);
   }
 
-  function getSlideStep(slides) {
-    return slides.length ? slides[0].offsetWidth : 0;
+  function getCarouselPageCount(id) {
+    const carousel = document.getElementById(id);
+    const track = carousel ? carousel.querySelector('.carousel-track') : null;
+    if (!track) return 0;
+    const total = track.scrollWidth;
+    const viewport = track.clientWidth;
+    if (!total || !viewport) return 0;
+    return Math.max(1, Math.ceil(total / viewport));
+  }
+
+  function buildCarouselDots(id) {
+    const carousel = document.getElementById(id);
+    const dotsContainer = document.getElementById('dots-' + id);
+    if (!carousel || !dotsContainer) return;
+    const pages = getCarouselPageCount(id);
+    if (pages === 0) return;
+    dotsContainer.innerHTML = '';
+    for (let i = 0; i < pages; i++) {
+      const dot = document.createElement('button');
+      dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+      dot.onclick = () => goToSlide(id, i);
+      dotsContainer.appendChild(dot);
+    }
   }
 
   function syncCarouselDots(id) {
     const carousel = document.getElementById(id);
     if (!carousel) return;
     const dots = carousel.querySelectorAll('.carousel-dot');
-    const slides = getCarouselSlides(id);
-    const current = getCurrentSlide(id, slides.length);
+    const pages = getCarouselPageCount(id);
+    const current = getCurrentSlide(id, pages);
     dots.forEach((d, i) => d.classList.toggle('active', i === current));
     const prev = carousel.querySelector('.prev');
     const next = carousel.querySelector('.next');
     if (prev) prev.disabled = current === 0;
-    if (next) next.disabled = current >= Math.max(0, slides.length - 1);
+    if (next) next.disabled = current >= Math.max(0, pages - 1);
   }
 
   // Inicializar

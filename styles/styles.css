@@ -365,7 +365,6 @@ h2 {
   display: flex;
   overflow-x: auto;
   overflow-y: hidden;
-  transition: transform 0.35s ease;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -665,8 +664,8 @@ h2 {
 .lightbox-nav button:hover {
   background: rgba(255,255,255,0.16);
 }
-.lightbox-nav button:first-child { left: 0; }
-.lightbox-nav button:last-child { right: 0; }
+.lightbox-nav button:first-child { left: -52px; }
+.lightbox-nav button:last-child { right: -52px; }
 .lightbox-caption {
   font-size: 13px;
   line-height: 1.6;
@@ -760,6 +759,8 @@ footer {
     width: 38px;
     height: 38px;
   }
+  .lightbox-nav button:first-child { left: -42px; }
+  .lightbox-nav button:last-child { right: -42px; }
 }
 
 /* ── VISOR DE PROYECTOS ── */
