@@ -38,6 +38,12 @@ const PROJECTS = [
 
   if (prevBtn) prevBtn.addEventListener('click', handlePrevClick);
   if (nextBtn) nextBtn.addEventListener('click', handleNextClick);
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const index = Number(btn.dataset.projectIndex);
+      if (Number.isInteger(index)) loadProject(index);
+    });
+  });
 
   function updateControls() {
     prevBtn.disabled = currentIndex === 0;
@@ -90,6 +96,14 @@ const PROJECTS = [
   function goToOtherProjects() {
     window.location.href = OTHER_PROJECTS_URL;
   }
+
+  // Keep inline HTML compatibility if any stale cached fragment still calls these.
+  window.loadProject = loadProject;
+  window.navigateProject = navigateProject;
+  window.moveCarousel = moveCarousel;
+  window.goToSlide = goToSlide;
+  window.changeLightboxSlide = changeLightboxSlide;
+  window.closeLightbox = closeLightbox;
 
   document.addEventListener('keydown', e => {
     if (isLightboxOpen()) {
