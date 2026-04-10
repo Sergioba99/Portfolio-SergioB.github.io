@@ -125,13 +125,15 @@
 </div>
 </section>
 
-<!-- Visor con flechas laterales -->
+<!-- Visor de proyectos -->
 <div class="pv-wrapper">
-  <button class="pv-arrow" id="pv-prev" onclick="navigateProject(-1)" aria-label="Proyecto anterior">&#8249;</button>
+  <div class="pv-controls">
+    <button class="pv-arrow" id="pv-prev" onclick="navigateProject(-1)" aria-label="Proyecto anterior">&#8249;</button>
+    <button class="pv-arrow" id="pv-next" onclick="navigateProject(1)" aria-label="Proyecto siguiente">&#8250;</button>
+  </div>
   <div class="pv-viewer" id="pv-viewer">
     <div class="pv-loading">Cargando proyecto...</div>
   </div>
-  <button class="pv-arrow" id="pv-next" onclick="navigateProject(1)" aria-label="Proyecto siguiente">&#8250;</button>
 </div>
 
 <div class="image-lightbox" id="image-lightbox" aria-hidden="true">

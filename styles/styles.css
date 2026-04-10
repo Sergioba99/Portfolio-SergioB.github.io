@@ -108,11 +108,12 @@ nav {
   max-width: var(--content-width);
   margin: 0 auto;
 }
-section { padding: 40px 40px; max-width: var(--content-width); margin: 0 auto; }
+section { padding: 32px 40px; max-width: var(--content-width); margin: 0 auto; }
+#proyectos { padding-bottom: 16px; }
 
 /* ── HERO ── */
 #hero {
-  padding: 96px 40px 80px;
+  padding: 88px 40px 72px;
   max-width: var(--content-width);
 }
 .hero-tag {
@@ -762,18 +763,17 @@ footer {
   }
   .lightbox-nav {
     position: static;
-    inset: auto;
     top: auto;
     left: auto;
     right: auto;
     transform: none;
-    padding: 0;
+    order: 2;
     justify-content: center;
-    pointer-events: auto;
     width: 100%;
     max-width: 160px;
     margin: 0 auto;
     gap: 8px;
+    pointer-events: auto;
   }
   .lightbox-nav button {
     width: 34px;
@@ -792,7 +792,7 @@ footer {
   align-items: center;
   gap: 8px;
   flex-wrap: wrap;
-  margin-bottom: 6px;
+  margin-bottom: 2px;
 }
 .pv-btn {
   background: transparent;
@@ -820,11 +820,19 @@ footer {
 /* Wrapper fuera del section para poder usar ancho completo */
 .pv-wrapper {
   display: flex;
-  align-items: flex-start;
-  gap: 0;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
   max-width: var(--viewer-width);
   margin: 0 auto;
-  padding: 0 8px 48px;
+  padding: 0 8px 40px;
+}
+.pv-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 0 8px;
 }
 .pv-arrow {
   background: transparent;
@@ -844,7 +852,7 @@ footer {
   flex-shrink: 0;
   position: relative;
   top: 0;
-  margin-top: 2px;
+  margin-top: 0;
 }
 .pv-arrow:hover:not(:disabled) {
   border-color: var(--accent);
@@ -857,7 +865,7 @@ footer {
 .pv-viewer {
   flex: 1;
   min-width: 0;
-  padding: 0 10px;
+  padding: 0;
   min-height: 120px;
 }
 .pv-viewer.pv-fade {
