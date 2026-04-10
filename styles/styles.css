@@ -374,6 +374,7 @@ h2 {
   display: none;
 }
 .carousel-slide {
+  display: none
   flex: 0 0 50%;
   min-width: 50%;
   box-sizing: border-box;
