@@ -656,19 +656,20 @@ h2 {
   background: rgba(55, 103, 246, 0.06);
 }
 .lightbox-toolbar {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
-  justify-content: center;
   min-height: 40px;
   padding: 0 42px;
+  gap: 12px;
 }
 .lightbox-meta {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 6px;
   max-width: min(720px, 100%);
   text-align: center;
+  min-width: 0;
 }
 .lightbox-counter {
   display: inline-flex;
