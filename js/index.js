@@ -27,13 +27,6 @@ const PROJECTS = [
     nextBtn.disabled = currentIndex === PROJECTS.length - 1;
   }
 
-  function centerArrows() {
-    const h = viewer.offsetHeight;
-    const offset = Math.round(h / 2) - 18;
-    prevBtn.style.top = offset + 'px';
-    nextBtn.style.top = offset + 'px';
-  }
-
   function loadProject(index) {
     currentIndex = index;
     btns.forEach((b, i) => b.classList.toggle('active', i === index));
@@ -47,7 +40,6 @@ const PROJECTS = [
         void viewer.offsetWidth;
         viewer.classList.add('pv-fade');
         viewer.querySelectorAll('.carousel').forEach(c => initCarousel(c.id));
-        centerArrows();
       })
       .catch(() => {
         viewer.innerHTML = '<div class="pv-loading">No se pudo cargar el proyecto.</div>';
