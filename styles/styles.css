@@ -344,7 +344,7 @@ h1 .hl { color: var(--accent); }
 }
 .hero-metrics {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
 }
 .metric-card {
@@ -356,10 +356,11 @@ h1 .hl { color: var(--accent); }
 .metric-card strong {
   display: block;
   font-family: var(--font-title);
-  font-size: 22px;
-  letter-spacing: -0.04em;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
   color: var(--text);
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 .metric-card span {
   display: block;
@@ -1210,7 +1211,7 @@ footer {
     grid-template-columns: 1fr;
   }
   .hero-metrics {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: 1fr;
   }
   .contact-grid {
     grid-template-columns: 1fr;
