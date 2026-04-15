@@ -20,7 +20,7 @@
   --amber: #f2b84b;
   --amber-dim: rgba(242, 184, 75, 0.12);
   --amber-border: rgba(242, 184, 75, 0.22);
-  --shadow: 0 24px 80px rgba(4, 10, 22, 0.34);
+  --shadow: 0 18px 46px rgba(4, 10, 22, 0.24);
   --font-title: 'Space Grotesk', sans-serif;
   --font-body: 'Manrope', sans-serif;
   --content-width: 1160px;
@@ -32,8 +32,8 @@ html { scroll-behavior: smooth; }
 
 body {
   background:
-    radial-gradient(circle at top left, rgba(126, 166, 255, 0.18), transparent 34%),
-    radial-gradient(circle at 82% 12%, rgba(73, 211, 161, 0.10), transparent 26%),
+    radial-gradient(circle at top left, rgba(126, 166, 255, 0.10), transparent 30%),
+    radial-gradient(circle at 82% 12%, rgba(73, 211, 161, 0.06), transparent 22%),
     linear-gradient(180deg, #050b16 0%, var(--bg0) 28%, #08101d 100%);
   color: var(--text);
   font-family: var(--font-body);
@@ -50,10 +50,10 @@ body::before {
   position: fixed;
   inset: 0;
   pointer-events: none;
-  background-image: linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-image: linear-gradient(rgba(255,255,255,0.012) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.012) 1px, transparent 1px);
   background-size: 44px 44px;
   mask-image: linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.06) 70%, transparent);
-  opacity: 0.35;
+  opacity: 0.18;
 }
 
 a {
@@ -73,8 +73,8 @@ nav {
   z-index: 100;
   width: min(var(--content-width-wide), calc(100% - 24px));
   margin: 14px auto 0;
-  background: rgba(8, 16, 29, 0.72);
-  backdrop-filter: blur(18px);
+  background: rgba(8, 16, 29, 0.82);
+  backdrop-filter: blur(12px);
   border: 1px solid rgba(158, 177, 211, 0.12);
   border-radius: 20px;
   padding: 0 22px;
@@ -193,7 +193,7 @@ section {
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 28px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
 }
 .hero-tag-dot {
   width: 6px;
@@ -241,11 +241,11 @@ h1 .hl { color: var(--accent); }
   align-items: center;
   justify-content: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
-  box-shadow: 0 14px 30px rgba(126, 166, 255, 0.20);
+  box-shadow: 0 10px 22px rgba(126, 166, 255, 0.12);
 }
 .btn-primary:hover {
   transform: translateY(-1px);
-  box-shadow: 0 18px 38px rgba(126, 166, 255, 0.24);
+  box-shadow: 0 12px 26px rgba(126, 166, 255, 0.16);
 }
 .btn-secondary {
   background: rgba(255,255,255,0.02);
@@ -295,10 +295,10 @@ h1 .hl { color: var(--accent); }
   content: '';
   position: absolute;
   inset: auto -18% -36% auto;
-  width: 220px;
-  height: 220px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(126, 166, 255, 0.20), transparent 66%);
+  background: radial-gradient(circle, rgba(126, 166, 255, 0.10), transparent 66%);
   pointer-events: none;
 }
 .hero-card-label,
@@ -482,7 +482,7 @@ h2 {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(126, 166, 255, 0.04), transparent 42%);
+  background: linear-gradient(135deg, rgba(126, 166, 255, 0.025), transparent 38%);
   pointer-events: none;
 }
 
@@ -837,8 +837,8 @@ h2 {
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  background: rgba(4, 9, 18, 0.82);
-  backdrop-filter: blur(14px);
+  background: rgba(4, 9, 18, 0.76);
+  backdrop-filter: blur(10px);
   z-index: 9999;
 }
 .image-lightbox.open { display: flex; }
