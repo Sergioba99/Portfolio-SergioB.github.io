@@ -610,14 +610,14 @@ h2 {
   background: rgba(8, 16, 29, 0.82);
   border: 1px solid var(--surface-border);
   color: var(--text);
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   border-radius: 999px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
+  font-size: 17px;
   transition: background 0.2s, border-color 0.2s, transform 0.2s;
   line-height: 1;
   z-index: 2;
@@ -941,13 +941,13 @@ h2 {
   transform: translateY(-50%);
 }
 .lightbox-nav button {
-  width: 44px;
-  height: 44px;
+  width: 46px;
+  height: 46px;
   border: 1px solid var(--surface-border);
   border-radius: 999px;
   background: rgba(255,255,255,0.04);
   color: var(--muted);
-  font-size: 18px;
+  font-size: 19px;
   pointer-events: auto;
   transition: border-color 0.15s, color 0.15s, background 0.15s;
 }
@@ -1113,10 +1113,10 @@ footer {
     pointer-events: auto;
   }
   .lightbox-nav button {
-    width: 34px;
-    height: 34px;
+    width: 36px;
+    height: 36px;
     border-radius: 10px;
-    font-size: 16px;
+    font-size: 17px;
   }
   .image-lightbox img {
     max-height: 42vh;
@@ -1136,9 +1136,9 @@ footer {
   border: 1px solid var(--surface-border);
   color: var(--muted);
   font-family: var(--font-title);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
-  padding: 7px 18px;
+  padding: 8px 19px;
   border-radius: 999px;
   cursor: pointer;
   letter-spacing: 1px;
@@ -1213,12 +1213,12 @@ footer {
   background: rgba(255,255,255,0.02);
   border: 1px solid var(--surface-border);
   color: var(--muted);
-  width: 36px;
-  min-width: 36px;
-  height: 36px;
+  width: 38px;
+  min-width: 38px;
+  height: 38px;
   border-radius: 999px;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 25px;
   line-height: 1;
   display: flex;
   align-items: center;
@@ -1240,8 +1240,8 @@ footer {
 .pv-arrow.pv-more-link {
   width: auto;
   min-width: 0;
-  padding: 7px 14px;
-  font-size: 11px;
+  padding: 8px 15px;
+  font-size: 12px;
   font-family: var(--font-title);
   font-weight: 600;
   letter-spacing: 1.2px;
