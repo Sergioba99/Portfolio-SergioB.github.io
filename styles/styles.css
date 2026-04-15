@@ -23,9 +23,9 @@
   --shadow: 0 24px 80px rgba(4, 10, 22, 0.34);
   --font-title: 'Space Grotesk', sans-serif;
   --font-body: 'Manrope', sans-serif;
-  --content-width: 1240px;
-  --content-width-wide: 1240px;
-  --viewer-width: 1240px;
+  --content-width: 1180px;
+  --content-width-wide: 1200px;
+  --viewer-width: 1180px;
 }
 
 html { scroll-behavior: smooth; }
@@ -174,7 +174,7 @@ section {
   grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.9fr);
   gap: 28px;
   align-items: stretch;
-  max-width: var(--content-width-wide);
+  max-width: var(--content-width);
 }
 .hero-copy,
 .hero-panel {
@@ -216,7 +216,7 @@ h1 .hl { color: var(--accent); }
 .hero-sub {
   font-size: 17px;
   color: var(--muted);
-  max-width: 860px;
+  max-width: 780px;
   margin-bottom: 34px;
   line-height: 1.82;
 }
@@ -330,6 +330,7 @@ h1 .hl { color: var(--accent); }
 .hero-card p {
   color: var(--muted);
   line-height: 1.8;
+  max-width: 46ch;
 }
 .hero-chip-row {
   display: flex;
@@ -371,7 +372,7 @@ h1 .hl { color: var(--accent); }
 .metric-card span {
   display: block;
   color: var(--muted);
-  font-size: 14x;
+  font-size: 14px;
   line-height: 1.45;
 }
 
@@ -399,7 +400,7 @@ h2 {
   color: var(--muted);
   font-size: 15px;
   line-height: 1.9;
-  max-width: 880px;
+  max-width: 760px;
 }
 .about-text strong { color: var(--text); font-weight: 500; }
 
@@ -532,7 +533,7 @@ h2 {
   color: var(--text);
   line-height: 1.55;
   margin-bottom: 14px;
-  max-width: 920px;
+  max-width: 760px;
 }
 
 .block { margin-bottom: 8px; }
@@ -546,6 +547,7 @@ h2 {
   font-size: 13px;
   color: var(--muted);
   line-height: 1.7;
+  max-width: 860px;
 }
 
 /* ── CARRUSEL ── */
@@ -748,6 +750,7 @@ h2 {
   color: var(--muted);
   font-size: 13px;
   line-height: 1.6;
+  max-width: 42ch;
 }
 
 /* Repo link */
@@ -1234,6 +1237,14 @@ footer {
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;
+  }
+  .hero-sub,
+  .hero-card p,
+  .about-text,
+  .project-subtitle,
+  .block-text,
+  .contact-note {
+    max-width: none;
   }
   .stack-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
