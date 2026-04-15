@@ -1,18 +1,18 @@
 /* ── LAYOUT PANEL LATERAL ── */
     .op-layout {
       display: grid;
-      grid-template-columns: 200px 1fr;
+      grid-template-columns: 176px minmax(0, 1fr);
       gap: 0;
-      max-width: 1060px;
+      max-width: 1240px;
       margin: 0 auto;
-      padding: 0 40px 72px;
+      padding: 0 28px 72px;
       align-items: start;
     }
 
     /* Panel lateral */
     .op-sidebar {
       border-right: 1px solid var(--border);
-      padding: 0 20px 40px 0;
+      padding: 0 18px 40px 0;
       position: sticky;
       top: 72px;
     }
@@ -74,7 +74,7 @@
 
     /* Área de contenido */
     .op-content {
-      padding: 0 0 0 32px;
+      padding: 0 0 0 24px;
       min-height: 300px;
     }
 

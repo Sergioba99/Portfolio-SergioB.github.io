@@ -176,14 +176,7 @@
     if (!dotsContainer) return;
     dotsContainer.innerHTML = '';
     if (slides.length === 0) {
-      const track = carousel.querySelector('.carousel-track');
-      if (track) {
-        track.innerHTML = '<div class="carousel-empty">Sin imágenes todavía</div>';
-      }
-      const prev = carousel.querySelector('.prev');
-      const next = carousel.querySelector('.next');
-      if (prev) prev.style.display = 'none';
-      if (next) next.style.display = 'none';
+      carousel.style.display = 'none';
       return;
     }
 
