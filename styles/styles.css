@@ -1153,24 +1153,41 @@ footer {
   border-color: var(--accent);
   color: #081120;
 }
+.pv-panel {
+  width: 100%;
+  min-width: 0;
+}
+#pv-viewer,
+.op-viewer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+#pv-viewer > .pv-panel,
+.op-viewer > .pv-panel {
+  width: 100%;
+  min-width: 0;
+  align-self: flex-start;
+}
 
 /* Wrapper fuera del section para poder usar ancho completo */
 .pv-wrapper {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  max-width: var(--viewer-width);
+  max-width: var(--content-width);
   margin: 0 auto;
-  padding: 8px 0 40px;
+  padding: 8px 40px 40px;
 }
 .pv-controls {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  max-width: var(--viewer-width);
+  max-width: var(--content-width);
   margin: 0 auto 8px;
-  padding: 0;
+  padding: 0 40px;
 }
 .pv-buttons {
   display: flex;
@@ -1240,7 +1257,7 @@ footer {
 
 @media (min-width: 1400px) {
   .pv-wrapper, .pv-controls {
-    max-width: var(--viewer-width);
+    max-width: var(--content-width);
   }
 }
 
