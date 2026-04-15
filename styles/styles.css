@@ -23,9 +23,9 @@
   --shadow: 0 24px 80px rgba(4, 10, 22, 0.34);
   --font-title: 'Space Grotesk', sans-serif;
   --font-body: 'Manrope', sans-serif;
-  --content-width: 1080px;
-  --content-width-wide: 1180px;
-  --viewer-width: 1180px;
+  --content-width: 1240px;
+  --content-width-wide: 1240px;
+  --viewer-width: 1240px;
 }
 
 html { scroll-behavior: smooth; }
@@ -392,6 +392,8 @@ h2 {
 /* ── ABOUT ── */
 .section-card {
   padding: 28px;
+  width: 100%;
+  max-width: none;
 }
 .about-text {
   color: var(--muted);
