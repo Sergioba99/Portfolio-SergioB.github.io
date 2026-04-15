@@ -23,9 +23,9 @@
   --shadow: 0 24px 80px rgba(4, 10, 22, 0.34);
   --font-title: 'Space Grotesk', sans-serif;
   --font-body: 'Manrope', sans-serif;
-  --content-width: 1180px;
-  --content-width-wide: 1200px;
-  --viewer-width: 1180px;
+  --content-width: 1160px;
+  --content-width-wide: 1160px;
+  --viewer-width: 1128px;
 }
 
 html { scroll-behavior: smooth; }
@@ -326,11 +326,12 @@ h1 .hl { color: var(--accent); }
   line-height: 1.1;
   letter-spacing: -0.04em;
   margin-bottom: 14px;
+  overflow-wrap: anywhere;
 }
 .hero-card p {
   color: var(--muted);
   line-height: 1.8;
-  max-width: 46ch;
+  max-width: 44ch;
 }
 .hero-chip-row {
   display: flex;
@@ -527,13 +528,15 @@ h2 {
   color: var(--text);
   margin-bottom: 6px;
   line-height: 1.3;
+  overflow-wrap: anywhere;
 }
 .project-subtitle {
   font-size: 15px;
   color: var(--text);
   line-height: 1.55;
   margin-bottom: 14px;
-  max-width: 760px;
+  max-width: 720px;
+  overflow-wrap: anywhere;
 }
 
 .block { margin-bottom: 8px; }
@@ -547,7 +550,8 @@ h2 {
   font-size: 13px;
   color: var(--muted);
   line-height: 1.7;
-  max-width: 860px;
+  max-width: 800px;
+  overflow-wrap: anywhere;
 }
 
 /* ── CARRUSEL ── */
@@ -764,6 +768,7 @@ h2 {
   margin-top: 10px;
   opacity: 0.88;
   transition: opacity 0.2s, transform 0.2s;
+  overflow-wrap: anywhere;
 }
 .repo-link:hover { opacity: 1; transform: translateY(-1px); }
 .repo-link svg { flex-shrink: 0; }
@@ -779,6 +784,7 @@ h2 {
   gap: 1.5rem;
   align-items: start;
   margin: 1.5rem 0;
+  max-width: 100%;
 }
 .project-video-wrapper {
   position: relative;
@@ -813,6 +819,10 @@ h2 {
 }
 .video-placeholder.hidden { display: none; }
 .project-content-column { min-width: 0; }
+.project-content-column .block,
+.project-content-column .badges {
+  max-width: 100%;
+}
 .carousel-slide img { cursor: zoom-in; }
 
 .image-lightbox {
@@ -1151,7 +1161,7 @@ footer {
   align-items: stretch;
   max-width: var(--viewer-width);
   margin: 0 auto;
-  padding: 8px 8px 40px;
+  padding: 8px 0 40px;
 }
 .pv-controls {
   display: flex;
@@ -1160,7 +1170,7 @@ footer {
   gap: 12px;
   max-width: var(--viewer-width);
   margin: 0 auto 8px;
-  padding: 0 8px;
+  padding: 0;
 }
 .pv-buttons {
   display: flex;
@@ -1230,7 +1240,7 @@ footer {
 
 @media (min-width: 1400px) {
   .pv-wrapper, .pv-controls {
-    max-width: var(--content-width);
+    max-width: var(--viewer-width);
   }
 }
 
