@@ -2,6 +2,7 @@
   const STORAGE_KEY = 'portfolio-chatbot-state-v1';
   const OPEN_KEY = 'portfolio-chatbot-open-v1';
   const MAX_REQUEST_MESSAGES = 24;
+  const API_BASE_URL = 'https://groq-portfolio-chatbot.sergio-berraco99.workers.dev/api/chat';
 
   const SYSTEM_MESSAGE = {
     role: 'system',
@@ -13,13 +14,7 @@
     content: 'Hola. Puedo ayudarte con el CV, los proyectos y el stack de Sergio. Pregunta lo que necesites sobre su perfil profesional.',
   };
 
-  const config = window.PORTFOLIO_CHATBOT_CONFIG || {};
-  const apiBaseUrl = normalizeBaseUrl(
-    config.apiBaseUrl ||
-    window.PORTFOLIO_CHATBOT_API_URL ||
-    (document.body && document.body.dataset ? document.body.dataset.chatbotApiBaseUrl : '') ||
-    ''
-  );
+  const apiBaseUrl = normalizeBaseUrl(API_BASE_URL);
 
   const state = {
     messages: loadMessages(),
@@ -138,7 +133,7 @@
     inputEl = document.createElement('textarea');
     inputEl.className = 'pf-chat-input';
     inputEl.rows = 1;
-    inputEl.placeholder = 'Escribe tu pregunta...';
+    inputEl.placeholder = 'Pregunta por Sergio, sus proyectos o su stack';
     inputEl.setAttribute('aria-label', 'Escribe tu pregunta');
     inputEl.addEventListener('input', autosizeInput);
     inputEl.addEventListener('keydown', (event) => {
@@ -230,7 +225,7 @@
     if (!statusEl) return;
 
     if (!apiBaseUrl) {
-      statusEl.textContent = 'Configura window.PORTFOLIO_CHATBOT_API_URL con la URL del worker para activar el chat.';
+      statusEl.textContent = 'Configura la URL del worker para activar el chat.';
       return;
     }
 

@@ -24,10 +24,10 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  border-radius: 24px;
-  border: 1px solid rgba(158, 177, 211, 0.12);
-  background: linear-gradient(180deg, rgba(10, 18, 32, 0.98), rgba(8, 14, 25, 0.98));
-  box-shadow: 0 16px 34px rgba(4, 10, 22, 0.24);
+  border-radius: 28px;
+  border: 1px solid rgba(158, 177, 211, 0.10);
+  background: #040a15;
+  box-shadow: 0 18px 40px rgba(4, 10, 22, 0.28);
   opacity: 0;
   visibility: hidden;
   transform: translateY(14px) scale(0.98);
@@ -43,38 +43,38 @@
 
 .pf-chat-header {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: 12px;
-  padding: 16px 18px 14px;
-  border-bottom: 1px solid rgba(158, 177, 211, 0.10);
+  padding: 24px 26px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .pf-chat-title {
   font-family: var(--font-title);
-  font-size: 18px;
-  line-height: 1.15;
-  letter-spacing: -0.03em;
+  font-size: 22px;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
   color: var(--text);
   margin: 0;
 }
 
 .pf-chat-close {
   flex-shrink: 0;
-  border: 1px solid rgba(158, 177, 211, 0.14);
-  background: rgba(255, 255, 255, 0.03);
-  color: var(--muted);
-  border-radius: 14px;
-  min-width: 40px;
-  height: 40px;
-  padding: 0 12px;
+  border: 1px solid rgba(158, 177, 211, 0.18);
+  background: rgba(255, 255, 255, 0.02);
+  color: #aeb9cf;
+  border-radius: 16px;
+  min-width: 76px;
+  height: 44px;
+  padding: 0 16px;
   cursor: pointer;
-  font: 700 12px/1 var(--font-body);
+  font: 700 14px/1 var(--font-body);
   transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
 }
 
 .pf-chat-close:hover {
-  border-color: rgba(126, 166, 255, 0.28);
+  border-color: rgba(126, 166, 255, 0.30);
   background: rgba(126, 166, 255, 0.08);
   color: var(--text);
 }
@@ -85,19 +85,17 @@
   overflow: auto;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding: 16px;
-  background:
-    radial-gradient(circle at top right, rgba(126, 166, 255, 0.06), transparent 28%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.00));
+  gap: 14px;
+  padding: 24px 24px 18px;
+  background: #040a15;
 }
 
 .pf-chat-message {
-  max-width: 88%;
+  max-width: 84%;
   display: grid;
-  gap: 6px;
+  gap: 8px;
   border-radius: 18px;
-  padding: 12px 14px 10px;
+  padding: 14px 16px 12px;
   line-height: 1.6;
   font-size: 14px;
 }
@@ -108,10 +106,10 @@
 }
 
 .pf-chat-message-meta {
-  font-size: 10px;
-  letter-spacing: 1.2px;
+  font-size: 11px;
+  letter-spacing: 1.4px;
   text-transform: uppercase;
-  opacity: 0.6;
+  opacity: 0.62;
 }
 
 .pf-chat-message-user {
@@ -124,8 +122,8 @@
 .pf-chat-message-assistant,
 .pf-chat-message-system {
   align-self: flex-start;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(158, 177, 211, 0.12);
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   color: var(--text);
   border-bottom-left-radius: 6px;
 }
@@ -166,8 +164,8 @@
 
 .pf-chat-status {
   min-height: 0;
-  padding: 0 16px 0;
-  font-size: 12px;
+  padding: 0 24px 0;
+  font-size: 11px;
   color: var(--soft);
 }
 
@@ -175,17 +173,17 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 10px;
-  padding: 0 16px 10px;
+  padding: 0 24px 10px;
 }
 
 .pf-chat-input {
   width: 100%;
-  min-height: 46px;
+  min-height: 64px;
   max-height: 120px;
   resize: none;
-  border-radius: 16px;
-  border: 1px solid var(--surface-border);
-  background: rgba(255, 255, 255, 0.03);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.035);
   color: var(--text);
   padding: 12px 14px;
   font: inherit;
@@ -194,30 +192,30 @@
 }
 
 .pf-chat-input::placeholder {
-  color: rgba(167, 179, 200, 0.68);
+  color: rgba(167, 179, 200, 0.55);
 }
 
 .pf-chat-input:focus {
   outline: none;
-  border-color: rgba(126, 166, 255, 0.32);
-  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(126, 166, 255, 0.34);
+  background: rgba(255, 255, 255, 0.045);
 }
 
 .pf-chat-send {
-  min-width: 94px;
+  min-width: 96px;
   border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 16px;
-  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  border-radius: 18px;
+  background: linear-gradient(135deg, #7596df, #6a85c7);
   color: #081120;
-  font: 700 13px/1 var(--font-body);
+  font: 700 14px/1 var(--font-body);
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
-  box-shadow: 0 10px 18px rgba(126, 166, 255, 0.12);
+  box-shadow: 0 10px 18px rgba(117, 150, 223, 0.18);
 }
 
 .pf-chat-send:hover:not(:disabled) {
   transform: translateY(-1px);
-  box-shadow: 0 12px 22px rgba(126, 166, 255, 0.16);
+  box-shadow: 0 12px 22px rgba(117, 150, 223, 0.22);
 }
 
 .pf-chat-send:disabled,
@@ -227,10 +225,11 @@
 }
 
 .pf-chat-disclaimer {
-  padding: 0 16px 14px;
+  padding: 0 24px 16px;
   color: var(--soft);
   font-size: 12px;
   line-height: 1.45;
+  text-align: center;
 }
 
 .pf-chat-launcher {
@@ -241,8 +240,8 @@
   height: 60px;
   padding: 0;
   border-radius: 50%;
-  border: 1px solid rgba(158, 177, 211, 0.16);
-  background: radial-gradient(circle at 30% 30%, rgba(126, 166, 255, 0.18), rgba(8, 16, 29, 0.96));
+  border: 1px solid rgba(158, 177, 211, 0.18);
+  background: radial-gradient(circle at 30% 30%, rgba(126, 166, 255, 0.20), rgba(8, 16, 29, 0.96));
   color: var(--text);
   box-shadow: 0 12px 24px rgba(4, 10, 22, 0.18);
   cursor: pointer;
@@ -257,11 +256,11 @@
 }
 
 .pf-chat-launcher-icon {
-  width: 28px;
-  height: 28px;
+  width: 27px;
+  height: 27px;
   fill: none;
   stroke: #f5f8ff;
-  stroke-width: 1.8;
+  stroke-width: 1.85;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
@@ -294,7 +293,7 @@
   .pf-chat-panel {
     width: 100%;
     height: min(68vh, 560px);
-    border-radius: 22px;
+    border-radius: 24px;
   }
 
   .pf-chat-launcher {
