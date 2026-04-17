@@ -1,6 +1,7 @@
 (function () {
   const STORAGE_KEY = 'portfolio-chatbot-state-v1';
   const OPEN_KEY = 'portfolio-chatbot-open-v1';
+  const WELCOME_BUBBLE_KEY = 'portfolio-chatbot-welcome-bubble-v1';
   const MAX_REQUEST_MESSAGES = 24;
   const API_BASE_URL = 'https://groq-portfolio-chatbot.sergio-berraco99.workers.dev';
 
@@ -22,6 +23,7 @@
   const state = {
     messages: loadMessages(),
     open: loadOpenState(),
+    welcomeBubbleDismissed: loadWelcomeBubbleDismissed(),
     loading: false,
     status: '',
     blockedUntil: 0,
@@ -38,6 +40,8 @@
   let closeButton;
   let menuEl;
   let disclaimerEl;
+  let welcomeBubble;
+  let welcomeBubbleClose;
   let blockedTimer = null;
   let menuOpen = false;
 
@@ -78,9 +82,14 @@
     return safeStorageGet(OPEN_KEY) === 'true';
   }
 
+  function loadWelcomeBubbleDismissed() {
+    return safeStorageGet(WELCOME_BUBBLE_KEY) === 'true';
+  }
+
   function persistState() {
     safeStorageSet(STORAGE_KEY, JSON.stringify(state.messages));
     safeStorageSet(OPEN_KEY, state.open ? 'true' : 'false');
+    safeStorageSet(WELCOME_BUBBLE_KEY, state.welcomeBubbleDismissed ? 'true' : 'false');
   }
 
   function canSubmit() {
@@ -245,6 +254,23 @@
 
     panel.append(header, messagesEl, footer);
 
+    welcomeBubble = createEl('div', 'pf-chat-welcome');
+    welcomeBubble.setAttribute('role', 'status');
+    welcomeBubble.setAttribute('aria-live', 'polite');
+
+    const welcomeBubbleText = createEl('button', 'pf-chat-welcome-body');
+    welcomeBubbleText.type = 'button';
+    welcomeBubbleText.setAttribute('aria-label', 'Abrir el chatbot');
+    welcomeBubbleText.innerHTML = '<strong>Soy el asistente de Sergio</strong><span>Pregunta por su perfil, proyectos o stack.</span>';
+    welcomeBubbleText.addEventListener('click', openPanel);
+
+    welcomeBubbleClose = createEl('button', 'pf-chat-welcome-close', '✕');
+    welcomeBubbleClose.type = 'button';
+    welcomeBubbleClose.setAttribute('aria-label', 'Cerrar sugerencia');
+    welcomeBubbleClose.addEventListener('click', dismissWelcomeBubble);
+
+    welcomeBubble.append(welcomeBubbleText, welcomeBubbleClose);
+
     launcher = createEl('button', 'pf-chat-launcher');
     launcher.type = 'button';
     launcher.setAttribute('aria-controls', 'portfolio-chatbot-panel');
@@ -255,7 +281,7 @@
 
     launcher.addEventListener('click', togglePanel);
 
-    root.append(panel, launcher);
+    root.append(panel, welcomeBubble, launcher);
     document.body.appendChild(root);
 
     document.addEventListener('keydown', handleGlobalKeydown);
@@ -305,6 +331,12 @@
   function closePanel() {
     state.open = false;
     closeMenu();
+    persistState();
+    render();
+  }
+
+  function dismissWelcomeBubble() {
+    state.welcomeBubbleDismissed = true;
     persistState();
     render();
   }
@@ -396,8 +428,13 @@
     if (!root) return;
 
     root.dataset.state = state.open ? 'open' : 'closed';
+    root.dataset.welcome = state.welcomeBubbleDismissed || state.open ? 'hidden' : 'visible';
     panel.setAttribute('aria-hidden', state.open ? 'false' : 'true');
     launcher.setAttribute('aria-expanded', state.open ? 'true' : 'false');
+
+    if (welcomeBubble) {
+      welcomeBubble.hidden = state.welcomeBubbleDismissed || state.open;
+    }
 
     messagesEl.replaceChildren();
 
