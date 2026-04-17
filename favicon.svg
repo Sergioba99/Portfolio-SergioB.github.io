@@ -1,39 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Portfolio favicon">
   <rect width="64" height="64" rx="16" fill="#07111f"/>
 
-  <!-- Pins -->
-  <g stroke="#6d7a91" stroke-width="4" stroke-linecap="round">
-    <path d="M20 6v12"/>
-    <path d="M32 6v12"/>
-    <path d="M44 6v12"/>
-    <path d="M56 20h-12"/>
-    <path d="M56 32h-12"/>
-    <path d="M56 44h-12"/>
-    <path d="M20 58v-12"/>
-    <path d="M32 58v-12"/>
-    <path d="M44 58v-12"/>
-    <path d="M8 20h12"/>
-    <path d="M8 32h12"/>
-    <path d="M8 44h12"/>
+  <g fill="none" stroke="#7ea6ff" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Chip outline -->
+    <rect x="14" y="14" width="36" height="36" rx="8" stroke-width="5"/>
+
+    <!-- External pins -->
+    <path d="M14 22h-6"/>
+    <path d="M14 32h-8"/>
+    <path d="M14 42h-6"/>
+    <path d="M50 22h6"/>
+    <path d="M50 32h8"/>
+    <path d="M50 42h6"/>
+    <path d="M22 14v-6"/>
+    <path d="M32 14v-8"/>
+    <path d="M42 14v-6"/>
+    <path d="M22 50v6"/>
+    <path d="M32 50v8"/>
+    <path d="M42 50v6"/>
+
+    <!-- Internal circuit traces -->
+    <path d="M21 24h14v10h8"/>
+    <path d="M21 40h9v-6h9"/>
   </g>
 
-  <!-- Chip body -->
-  <rect x="10" y="10" width="44" height="44" rx="10" fill="#b8c7d8" stroke="#6d7a91" stroke-width="4"/>
-  <rect x="16" y="16" width="32" height="32" rx="8" fill="#cf8578" stroke="#5f6878" stroke-width="3"/>
-
-  <!-- Circuit traces -->
-  <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
-    <path d="M22 22h12v10h12" stroke="#5f6878"/>
-    <path d="M22 34h8v8" stroke="#6b8fd6"/>
-    <path d="M40 30v8h-8v8" stroke="#45b489"/>
-    <path d="M26 40h-4v-8" stroke="#c99a3d"/>
-  </g>
-
-  <!-- Nodes -->
-  <g>
-    <circle cx="22" cy="22" r="4" fill="#6b8fd6" stroke="#5f6878" stroke-width="3"/>
-    <circle cx="42" cy="20" r="4" fill="#45b489" stroke="#5f6878" stroke-width="3"/>
-    <circle cx="26" cy="40" r="4" fill="#c99a3d" stroke="#5f6878" stroke-width="3"/>
-    <circle cx="38" cy="36" r="4" fill="#8ea6db" stroke="#5f6878" stroke-width="3"/>
-  </g>
+  <!-- Circuit nodes -->
+  <circle cx="21" cy="24" r="2.2" fill="#7ea6ff"/>
+  <circle cx="21" cy="40" r="2.2" fill="#7ea6ff"/>
+  <circle cx="44" cy="34" r="2.2" fill="#7ea6ff"/>
 </svg>
