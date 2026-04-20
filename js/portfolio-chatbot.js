@@ -2,7 +2,7 @@
   const STORAGE_KEY = 'portfolio-chatbot-state-v1';
   const OPEN_KEY = 'portfolio-chatbot-open-v1';
   const WELCOME_BUBBLE_KEY = 'portfolio-chatbot-welcome-bubble-v1';
-  const MAX_REQUEST_MESSAGES = 24;
+  const MAX_REQUEST_MESSAGES = 19;
   const API_BASE_URL = 'https://groq-portfolio-chatbot.sergio-berraco99.workers.dev';
 
   const SYSTEM_MESSAGE = {
