@@ -26,6 +26,7 @@
     welcomeBubbleDismissed: loadWelcomeBubbleDismissed(),
     loading: false,
     status: '',
+    blockedReason: '',
     blockedUntil: 0,
   };
 
@@ -97,7 +98,34 @@
   }
 
   function isRateLimited() {
-    return state.blockedUntil && Date.now() < state.blockedUntil;
+    if (state.blockedReason === 'rate_limited_permanent') return true;
+    return state.blockedReason === 'rate_limited' && state.blockedUntil && Date.now() < state.blockedUntil;
+  }
+
+  function getBackendErrorMessage(errorCode, status, fallbackError) {
+    const fallback = typeof fallbackError === 'string' && fallbackError.trim()
+      ? fallbackError.trim()
+      : '';
+
+    switch (String(errorCode || '')) {
+      case 'rate_limited':
+        return 'Se ha alcanzado el límite de mensajes. Inténtalo de nuevo más tarde.';
+      case 'rate_limited_permanent':
+        return 'Se ha bloqueado temporalmente esta IP por uso excesivo. Inténtalo más tarde.';
+      case 'invalid_payload':
+        return 'La petición no es válida. Revisa el mensaje e inténtalo otra vez.';
+      case 'missing_user_message':
+        return 'Falta un mensaje de usuario para poder responder.';
+      case 'origin_not_allowed':
+        return 'Este origen no está permitido para el chatbot.';
+      case 'internal_error':
+        return 'Ha ocurrido un error. Inténtalo de nuevo más tarde.';
+      default:
+        if (status === 429) {
+          return 'Se ha alcanzado el límite de mensajes. Inténtalo de nuevo más tarde.';
+        }
+        return fallback || 'Ha ocurrido un error. Inténtalo de nuevo más tarde.';
+    }
   }
 
   function buildPayloadMessages() {
@@ -345,6 +373,7 @@
     state.messages = [WELCOME_MESSAGE];
     state.status = '';
     state.loading = false;
+    state.blockedReason = '';
     state.blockedUntil = 0;
     if (blockedTimer) {
       window.clearInterval(blockedTimer);
@@ -412,6 +441,11 @@
 
     if (state.loading) {
       statusEl.textContent = 'Pensando...';
+      return;
+    }
+
+    if (state.blockedReason === 'rate_limited_permanent') {
+      statusEl.textContent = 'Se ha bloqueado temporalmente esta IP por uso excesivo. Inténtalo más tarde.';
       return;
     }
 
@@ -569,22 +603,42 @@
 
       if (!response.ok) {
         if (response.status === 429) {
+          const errorCode = String(data.error_code || data.errorCode || 'rate_limited');
           const retrySeconds = Number(data.retry_after_seconds || data.retryAfterSeconds || data.retryAfter || 30);
-          state.blockedUntil = Date.now() + Math.max(1, retrySeconds) * 1000;
-          startBlockedTicker();
+          state.blockedReason = errorCode === 'rate_limited_permanent' ? 'rate_limited_permanent' : 'rate_limited';
+          state.blockedUntil = state.blockedReason === 'rate_limited'
+            ? Date.now() + Math.max(1, retrySeconds) * 1000
+            : 0;
+          if (state.blockedReason === 'rate_limited') {
+            startBlockedTicker();
+          }
+          const backendMessage = getBackendErrorMessage(errorCode, response.status, data.error);
           state.messages = [
             ...state.messages,
             {
               role: 'assistant',
-              content: 'Ahora mismo hay demasiadas peticiones. Espera un momento y vuelve a intentarlo.',
+              content: backendMessage,
             },
           ];
+          state.status = backendMessage;
           persistState();
           render();
           return;
         }
 
-        throw new Error(data.error || 'La petición al worker ha fallado.');
+        const errorCode = String(data.error_code || data.errorCode || 'unknown_error');
+        const backendMessage = getBackendErrorMessage(errorCode, response.status, data.error);
+        state.messages = [
+          ...state.messages,
+          {
+            role: 'assistant',
+            content: backendMessage,
+          },
+        ];
+        state.status = backendMessage;
+        persistState();
+        render();
+        return;
       }
 
       const reply = typeof data.reply === 'string' && data.reply.trim()
@@ -628,6 +682,7 @@
       if (!isRateLimited()) {
         window.clearInterval(blockedTimer);
         blockedTimer = null;
+        state.blockedReason = '';
       }
       renderStatus();
     }, 1000);
